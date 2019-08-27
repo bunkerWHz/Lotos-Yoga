@@ -2,3 +2,99 @@
 @font-face {
   font-family: "Geometria";
   src: url("/fonts/Geometria.tff"); }
+
+.container {
+  margin: 0 auto;
+  padding: 0; }
+
+.main-page {
+  box-sizing: border-box;
+  min-width: 375px;
+  max-width: 100vw;
+  min-height: 812px;
+  max-height: 100vh;
+  background-color: #fbf5f4;
+  padding: 14px 14px 20px 20px;
+  position: relative; }
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 56px; }
+
+.main-nav {
+  margin-right: auto; }
+  .main-nav__items {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    height: 100vh; }
+  .main-nav__item {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Geometria";
+    font-size: 24px; }
+    .main-nav__item--active {
+      color: #000000; }
+  .main-nav--closed .main-nav__items {
+    display: none; }
+
+.hamburger {
+  width: 20px;
+  height: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .hamburger__line {
+    display: inline-block;
+    height: 2px;
+    width: 20px;
+    background-color: #f78e6a;
+    position: absolute; }
+    .hamburger__line:before {
+      position: absolute;
+      left: -4px;
+      content: "";
+      width: 2px;
+      height: 2px;
+      display: block;
+      background-color: #000000; }
+    .hamburger__line--top {
+      top: 0; }
+    .hamburger__line--middle {
+      top: 7px; }
+    .hamburger__line--bottom {
+      width: 14px;
+      bottom: 0;
+      left: 0; }
+
+.menu__title {
+  display: none; }
+
+.page__title {
+  display: none; }
+
+.page__phone {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .main-page {
+    min-width: 768px;
+    min-height: 1024px;
+    padding: 21px 30px; } }
+
+@media screen and (min-width: 1920px) {
+  .main-page {
+    min-width: 1920px;
+    min-height: 1080px;
+    padding: 61px 90px; } }
