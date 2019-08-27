@@ -1,6 +1,6 @@
 @font-face  {
     font-family: "Geometria"; 
-   src: url("/fonts/Geometria.tff");
+   src: url("/fonts/Geometria.ttf");
 }
 
 @import "norm.css";
@@ -8,5 +8,13 @@
 .container {
     margin: 0 auto;
     padding: 0;
+}
+.btn {
+    display: inline-block;
+    border-radius: 50%;
+width: 50px;
+height: 50px;
+background-color: #f78e6a;
+background-image: linear-gradient(to top, rgba(247, 142, 106, 0) 0%, #fc66a2 100%);
 }
 @import "main-page.scss"
