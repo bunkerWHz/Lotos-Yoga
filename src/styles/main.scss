@@ -1,7 +1,13 @@
 @font-face  {
     font-family: "Geometria"; 
    src: url("/fonts/Geometria.ttf");
+   font-weight: 400;
 }
+@font-face {
+    font-family:"Geometria"; 
+    src: url("/fonts/Geometria-Medium.ttf");
+    font-weight: 500;
+  }
 
 @import "norm.css";
 
