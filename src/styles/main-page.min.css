@@ -6,39 +6,41 @@
   height: 812px;
   background-color: #fbf5f4;
   padding: 14px 14px 20px 20px;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 .main-header {
   display: flex;
   flex-direction: row;
   margin-bottom: 56px; }
 
-.main-nav {
-  margin-right: auto; }
-  .main-nav__items {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    position: absolute;
-    top: 0;
-    height: 100vh; }
-  .main-nav__item {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
-    font-family: "Geometria";
-    font-size: 24px; }
-    .main-nav__item--active {
-      color: #000000; }
-  .main-nav--closed .main-nav__items {
-    display: none; }
+.main-nav__items {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  height: 100vh; }
+
+.main-nav__item {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Geometria";
+  font-size: 24px; }
+  .main-nav__item--active {
+    color: #000000; }
+
+.main-nav--closed .main-nav__items {
+  display: none; }
 
 .hamburger {
   width: 20px;
-  height: 16px;
+  height: 17px;
+  margin-top: 4px;
   box-sizing: border-box;
   padding: 0;
   background-color: transparent;
@@ -68,6 +70,9 @@
       width: 14px;
       bottom: 0;
       left: 0; }
+
+.main__logo {
+  margin-left: auto; }
 
 .menu__title {
   display: none; }
@@ -183,8 +188,7 @@
   font-family: "Geometria";
   font-size: 30px;
   font-weight: 300;
-  width: 28px;
-  line-height: 24px; }
+  width: 28px; }
   .pag--divider {
     width: 8px;
     font-size: 14px;
@@ -199,6 +203,11 @@
     line-height: 24px; }
 
 .socials {
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
   list-style: none;
   display: flex;
   flex-direction: row; }
@@ -246,7 +255,64 @@
   .main-page {
     min-width: 768px;
     min-height: 1024px;
-    padding: 21px 30px; } }
+    padding: 21px 30px; }
+  .main-header {
+    justify-content: space-between;
+    margin-bottom: 161px; }
+  .hamburger {
+    margin-right: 15px;
+    float: left; }
+  .menu__title {
+    display: flex;
+    color: #000000;
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 400; }
+  .page__phone {
+    display: flex;
+    color: #000000;
+    font-family: "Montserrat";
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500; }
+  .main__logo {
+    margin: 0 auto; }
+  .hero {
+    flex-direction: row;
+    justify-content: space-between; }
+    .hero__content {
+      order: 1; }
+    .hero__pic {
+      margin-right: calc(-74px - 30px);
+      order: 2;
+      margin-bottom: 93px; }
+  .pagination {
+    width: 64px;
+    height: 102px;
+    justify-content: flex-end; }
+    .pagination--mobile {
+      order: 3; }
+  .socials {
+    order: 2;
+    margin-top: auto; }
+  .page-swiper {
+    order: 1;
+    margin-top: auto; }
+  .pag {
+    background: -webkit-linear-gradient(to right, #f78e6a 0%, #fc66a2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 52px;
+    width: auto;
+    font-family: "Geometria";
+    font-weight: 300;
+    font-size: 30px; }
+    .pag--top {
+      font-size: 72px;
+      margin-bottom: 25px;
+      height: 72px; }
+  .main-footer {
+    height: 111px; } }
 
 @media screen and (min-width: 1920px) {
   .main-page {
