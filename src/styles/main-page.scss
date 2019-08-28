@@ -265,6 +265,30 @@ text-transform: uppercase;
     width: 30px;
     height: 30px;
     position: relative;
+    display: inline-block;
+ 
+    &:after {
+        z-index: 2;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        background-image: url(/img/page_arrow.svg);
+        }
+    &__img{
+        width: 100%;
+        height: auto;      
+        --color-stop-1: #f78e6a;
+        --color-stop-2: #fc66a2;
+        --fill-arrow: #ffffff;
+        &:hover{
+            --color-stop-1: #ffffff;
+            --color-stop-2: #ffffff;
+            --fill-arrow: #f78e6a;
+        }  
+    }
 }
 @media screen and (min-width: 768px) {
     .main-page {

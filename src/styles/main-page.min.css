@@ -213,7 +213,27 @@
 .page-swiper {
   width: 30px;
   height: 30px;
-  position: relative; }
+  position: relative;
+  display: inline-block; }
+  .page-swiper:after {
+    z-index: 2;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-image: url(/img/page_arrow.svg); }
+  .page-swiper__img {
+    width: 100%;
+    height: auto;
+    --color-stop-1: #f78e6a;
+    --color-stop-2: #fc66a2;
+    --fill-arrow: #ffffff; }
+    .page-swiper__img:hover {
+      --color-stop-1: #ffffff;
+      --color-stop-2: #ffffff;
+      --fill-arrow: #f78e6a; }
 
 @media screen and (min-width: 768px) {
   .main-page {
