@@ -5,7 +5,7 @@
   min-height: calc(812px);
   height: 100vh;
   background-color: #fbf5f4;
-  padding: 14px 14px 0 20px;
+  padding: 0 14px 0 20px;
   position: relative;
   overflow: hidden; }
 
@@ -170,8 +170,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: auto;
-  padding-bottom: 20px; }
+  margin-top: auto; }
 
 .pagination {
   display: flex;
@@ -263,8 +262,7 @@
 @media screen and (min-width: 768px) {
   .main-page {
     min-width: 768px;
-    min-height: 1024px;
-    padding: 21px 30px; }
+    min-height: 1024px; }
   .main-header {
     justify-content: space-between;
     margin-bottom: 161px; }
@@ -292,7 +290,7 @@
     .hero__content {
       order: 1; }
     .hero__pic {
-      margin-right: calc(-74px - 30px);
+      margin-right: calc(-90px);
       order: 2;
       margin-bottom: 93px; }
   .pagination {
@@ -327,7 +325,7 @@
   .main-page {
     min-width: 1920px;
     min-height: 1080px;
-    padding: 61px 90px; }
+    padding: 0 90px; }
   .main-header {
     margin-bottom: 30px; }
   .page__title {
@@ -337,6 +335,7 @@
     line-height: 18px;
     font-family: "Geometria";
     font-size: 18px;
+    margin-left: 300px;
     font-weight: 400;
     line-height: 36px;
     position: relative; }
@@ -358,7 +357,7 @@
   .hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center; }
     .hero__content {
       margin: 0; }
@@ -369,12 +368,15 @@
       bottom: 92px;
       font-size: 24px; }
   .hero__pic {
-    order: 1; }
+    order: 1;
+    margin-right: 111px;
+    margin-left: 142px; }
   .pagination {
-    height: 130px; }
+    height: 130px;
+    margin-left: auto; }
     .pagination--desktop {
       display: flex;
-      order: 3; }
+      order: 10; }
     .pagination--mobile {
       display: none; }
   .socials {
@@ -389,7 +391,7 @@
     color: #000000;
     font-family: "Geometria";
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 16px; }
   .page-swiper {
     order: 3; }

@@ -13,12 +13,19 @@
 
 .container {
     margin: 0 auto;
-    padding: 0;
+    padding: 14px 0 20px;
     display: flex;
+    position: relative;
     flex-direction: column;
-    min-height: calc(812px - 14px);
-    height: calc(100vh - 14px);
     justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 21px 0;
+
+    }
+}
+@media screen and (min-width: 1920px) {
 }
 picture {
     display: block;

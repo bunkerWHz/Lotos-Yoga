@@ -12,12 +12,15 @@
 
 .container {
   margin: 0 auto;
-  padding: 0;
+  padding: 14px 0 20px;
   display: flex;
+  position: relative;
   flex-direction: column;
-  min-height: calc(812px - 14px);
-  height: calc(100vh - 14px);
   justify-content: space-between; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 21px 0; } }
 
 picture {
   display: block; }
@@ -37,7 +40,7 @@ picture {
   min-height: calc(812px);
   height: 100vh;
   background-color: #fbf5f4;
-  padding: 14px 14px 0 20px;
+  padding: 0 14px 0 20px;
   position: relative;
   overflow: hidden; }
 
@@ -202,8 +205,7 @@ picture {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: auto;
-  padding-bottom: 20px; }
+  margin-top: auto; }
 
 .pagination {
   display: flex;
@@ -295,8 +297,7 @@ picture {
 @media screen and (min-width: 768px) {
   .main-page {
     min-width: 768px;
-    min-height: 1024px;
-    padding: 21px 30px; }
+    min-height: 1024px; }
   .main-header {
     justify-content: space-between;
     margin-bottom: 161px; }
@@ -324,7 +325,7 @@ picture {
     .hero__content {
       order: 1; }
     .hero__pic {
-      margin-right: calc(-74px - 30px);
+      margin-right: calc(-90px);
       order: 2;
       margin-bottom: 93px; }
   .pagination {
@@ -359,7 +360,7 @@ picture {
   .main-page {
     min-width: 1920px;
     min-height: 1080px;
-    padding: 61px 90px; }
+    padding: 0 90px; }
   .main-header {
     margin-bottom: 30px; }
   .page__title {
@@ -369,6 +370,7 @@ picture {
     line-height: 18px;
     font-family: "Geometria";
     font-size: 18px;
+    margin-left: 300px;
     font-weight: 400;
     line-height: 36px;
     position: relative; }
@@ -390,7 +392,7 @@ picture {
   .hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center; }
     .hero__content {
       margin: 0; }
@@ -401,12 +403,15 @@ picture {
       bottom: 92px;
       font-size: 24px; }
   .hero__pic {
-    order: 1; }
+    order: 1;
+    margin-right: 111px;
+    margin-left: 142px; }
   .pagination {
-    height: 130px; }
+    height: 130px;
+    margin-left: auto; }
     .pagination--desktop {
       display: flex;
-      order: 3; }
+      order: 10; }
     .pagination--mobile {
       display: none; }
   .socials {
@@ -421,7 +426,7 @@ picture {
     color: #000000;
     font-family: "Geometria";
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 16px; }
   .page-swiper {
     order: 3; }
@@ -446,7 +451,7 @@ picture {
   min-height: calc(812px);
   height: 100vh;
   background-color: #fbf5f4;
-  padding: 14px 14px 0 20px;
+  padding: 0 14px 0px 20px;
   position: relative;
   overflow: hidden; }
   .directions .main-header {
@@ -549,16 +554,19 @@ picture {
     display: none; } }
 
 @media screen and (min-width: 768px) {
-  .directions .main-header {
-    margin-bottom: 115px; }
+  .directions {
+    min-width: 768px;
+    min-height: 1024px; }
+    .directions .main-header {
+      margin-bottom: 100px; }
   .directions__content {
     display: flex;
     flex-direction: row;
-    position: relative;
-    height: 100%; }
+    position: relative; }
   .direction__lists {
     width: 435px;
-    margin-right: 110px; }
+    margin-right: 60px;
+    margin-bottom: 165px; }
   .direction {
     width: 435px; }
   .direction__sliders {
@@ -609,5 +617,26 @@ picture {
         line-height: 30px; }
   .directions__main-logo {
     position: absolute;
-    bottom: -40px;
+    bottom: -60px;
     right: 5px; } }
+
+@media screen and (min-width: 1920px) {
+  .directions {
+    min-width: 1920px;
+    min-height: 1080px;
+    padding: 0 90px; }
+  .directions__content {
+    justify-content: flex-start;
+    align-items: center; }
+  .directions__main-logo {
+    position: unset;
+    order: 3;
+    margin-right: 105px;
+    margin-left: 75px; }
+  .yoga__lists {
+    order: 2;
+    margin-left: 110px;
+    margin-top: 120px; }
+  .direction__lists {
+    order: 4;
+    margin-top: 120px; } }

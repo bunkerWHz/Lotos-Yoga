@@ -5,7 +5,7 @@
     min-height: calc(812px);
     height: 100vh;
     background-color: #fbf5f4;
-    padding: 14px 14px 0 20px;
+    padding: 0 14px 0px 20px;
     position: relative;
     overflow: hidden;
 
@@ -135,25 +135,30 @@
 
 @media screen and (min-width: 768px) {
     .directions {
+        min-width: 768px;
+        min-height: 1024px;
         .main-header {
-            margin-bottom: 115px;
+            margin-bottom: 100px;
         }
     }
     .directions__content {
         display: flex;
         flex-direction: row;
         position: relative;
-        height: 100%;
     }
 
 
     .direction__lists {
         width: 435px;
-        margin-right: 110px;
+        margin-right: 60px;
+        margin-bottom: 165px;
+
     }
 
     .direction {
         width: 435px;
+        &-btn {
+        }
     }
 
     .direction__sliders {
@@ -222,8 +227,39 @@
     }
     .directions__main-logo {
         position: absolute;
-        bottom: -40px;
+        bottom: -60px;
         right: 5px;
     }
 
+}
+
+
+@media screen and (min-width: 1920px) {
+    .directions {
+        min-width: 1920px;
+        min-height: 1080px;
+        padding: 0 90px;
+    }
+    .directions__content {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .directions__main-logo {
+        position: unset;
+        order: 3;
+        margin-right: 105px;
+        margin-left: 75px;
+    }
+    .yoga__lists {
+        order: 2;
+        margin-left: 110px;
+        margin-top: 120px;
+
+    }
+    .direction__lists {
+        order: 4;
+        margin-top: 120px;
+    }
+   
 }
