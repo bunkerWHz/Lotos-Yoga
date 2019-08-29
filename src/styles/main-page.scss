@@ -7,7 +7,7 @@
     background-color: #fbf5f4;
     padding: 14px 14px 0 20px;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .main-header {
@@ -226,6 +226,7 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: auto;
+    padding-bottom: 20px;
 }
 
 .pagination {

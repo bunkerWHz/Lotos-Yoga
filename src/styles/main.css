@@ -14,8 +14,8 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 812px;
-  height: 100vh;
+  min-height: calc(812px - 14px);
+  height: calc(100vh - 14px);
   justify-content: space-between; }
 
 picture {
@@ -38,7 +38,7 @@ picture {
   background-color: #fbf5f4;
   padding: 14px 14px 0 20px;
   position: relative;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .main-header {
   display: flex;
@@ -201,7 +201,8 @@ picture {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: auto; }
+  margin-top: auto;
+  padding-bottom: 20px; }
 
 .pagination {
   display: flex;
@@ -446,7 +447,7 @@ picture {
   background-color: #fbf5f4;
   padding: 14px 14px 0 20px;
   position: relative;
-  overflow-x: hidden; }
+  overflow: hidden; }
   .directions .main-header {
     margin-bottom: 115px; }
 
