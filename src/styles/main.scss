@@ -15,20 +15,13 @@
     margin: 0 auto;
     height: 100%;
     box-sizing: border-box;
-    padding: 14px 0 20px;
+    padding: 0;
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: space-between;
 }
-@media screen and (min-width: 768px) {
-    .container {
-        padding: 21px 0;
 
-    }
-}
-@media screen and (min-width: 1920px) {
-}
 picture {
     display: block;
 }
@@ -45,3 +38,4 @@ background-image: linear-gradient(to top, rgba(247, 142, 106, 0) 0%, #fc66a2 100
 }
 @import "main-page.scss";
 @import "directions.scss";
+@import "form.scss";

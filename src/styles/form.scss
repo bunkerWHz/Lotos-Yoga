@@ -1,0 +1,15 @@
+.form {
+    box-sizing: border-box;
+    min-width: calc(375px);
+    width: calc(100vw - 20px);
+    min-height: calc(812px);
+    height: 100vh;
+    background-color: #fbf5f4;
+    padding: 0 14px 0px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form__logo--mobile {
+    display: none;
+}

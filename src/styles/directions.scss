@@ -8,10 +8,6 @@
     padding: 0 14px 0px 20px;
     position: relative;
     overflow: hidden;
-
-    .main-header {
-        margin-bottom: 115px;
-    }
 }
 
 .direction__lists {
@@ -86,6 +82,18 @@
     }
 }
 
+.page-swiper {
+    &--left {
+transform: rotate(90deg);
+background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    }
+    &--right {
+        transform: rotate(-90deg);
+    }
+}
+
 .hero__btn--inside {
     width: 60px;
     height: 60px;
@@ -137,9 +145,6 @@
     .directions {
         min-width: 768px;
         min-height: 1024px;
-        .main-header {
-            margin-bottom: 100px;
-        }
     }
     .directions__content {
         display: flex;
@@ -227,7 +232,7 @@
     }
     .directions__main-logo {
         position: absolute;
-        bottom: -60px;
+        bottom: -50px;
         right: 5px;
     }
 

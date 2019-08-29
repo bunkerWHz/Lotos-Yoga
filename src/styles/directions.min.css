@@ -9,8 +9,6 @@
   padding: 0 14px 0px 20px;
   position: relative;
   overflow: hidden; }
-  .directions .main-header {
-    margin-bottom: 115px; }
 
 .direction__lists {
   list-style: none;
@@ -73,6 +71,15 @@
   .direction-btn:hover {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
 
+.page-swiper--left {
+  transform: rotate(90deg);
+  background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.page-swiper--right {
+  transform: rotate(-90deg); }
+
 .hero__btn--inside {
   width: 60px;
   height: 60px;
@@ -112,8 +119,6 @@
   .directions {
     min-width: 768px;
     min-height: 1024px; }
-    .directions .main-header {
-      margin-bottom: 100px; }
   .directions__content {
     display: flex;
     flex-direction: row;
@@ -172,7 +177,7 @@
         line-height: 30px; }
   .directions__main-logo {
     position: absolute;
-    bottom: -60px;
+    bottom: -50px;
     right: 5px; } }
 
 @media screen and (min-width: 1920px) {
