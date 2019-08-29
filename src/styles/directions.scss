@@ -8,6 +8,7 @@
     padding: 14px 14px 0 20px;
     position: relative;
     overflow: hidden;
+
     .main-header {
         margin-bottom: 115px;
     }
@@ -21,104 +22,208 @@
 
 .direction__logo {
 
-background-image: linear-gradient(to top, #fc66a2 0%, #f78e6a 100%);
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
-background-clip: text;
-margin: 0 41px 15px 0;
-color: #f78e6a;
-font-family: "Geometria";
-font-size: 48px;
-font-weight: 400;
-display: inline-block;
+    background-image: linear-gradient(to top, #fc66a2 0%, #f78e6a 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 0 41px 15px 0;
+    color: #f78e6a;
+    font-family: "Geometria";
+    font-size: 48px;
+    font-weight: 400;
+    display: inline-block;
 }
+
 .direction__sliders {
     width: 70px;
     height: 30px;
     display: inline-block;
 }
+
 .direction__title {
-color: #000000;
-font-family: "Geometria";
-font-size: 24px;
-font-weight: 400;
-line-height: 36px;
-margin-bottom: 47px;
-margin-top: 0;
+    color: #000000;
+    font-family: "Geometria";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 47px;
+    margin-top: 0;
 }
+
 .direction__desc {
-color: #000000;
-font-family: "Geometria";
-font-size: 16px;
-font-weight: 300;
-margin-bottom: 37px;
-&:last-of-type {
-    margin-bottom: 57px;
+    color: #000000;
+    font-family: "Geometria";
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 37px;
+
+    &:last-of-type {
+        margin-bottom: 57px;
+    }
 }
-}
+
 .direction-btn {
     background-image: none;
     display: inline-block;
-width: 284px;
-height: 60px;
-box-sizing: border-box;
-border-radius: 29px;
-background-color: #f78e6a;
-color: #ffffff;
-font-family: "Geometria";
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-position: relative;
-margin: 0 auto;
-padding-top: 15px;
-padding-left: 81px;
-text-decoration: none;
-&:hover {
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    width: 284px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 29px;
+    background-color: #f78e6a;
+    color: #ffffff;
+    font-family: "Geometria";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-left: 81px;
+    text-decoration: none;
+
+    &:hover {
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    }
 }
-}
+
 .hero__btn--inside {
     width: 60px;
     height: 60px;
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
+
     &:before {
         top: calc(50% - 8px);
         left: calc(50% - 1px);
         height: 16px;
     }
+
     &:after {
         height: 16px;
-top: calc(50% - 8px);
-left: calc(50% - 1px);
+        top: calc(50% - 8px);
+        left: calc(50% - 1px);
     }
 }
+
 .directions__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .direction__list {
     display: none;
 }
+
 .direction__list--active {
     display: initial;
 }
+
 .yoga__lists {
     padding: 0;
     margin: 0;
     display: none;
 }
 
-.direction__main-logo--mobile {
-display: none;
+@media screen and (max-width: 767px) {
+    .direction__main-logo--mobile {
+        display: none;
+    }
 }
 
+
 @media screen and (min-width: 768px) {
-    
+    .directions {
+        .main-header {
+            margin-bottom: 115px;
+        }
+    }
+    .directions__content {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 100%;
+    }
 
 
+    .direction__lists {
+        width: 435px;
+        margin-right: 110px;
+    }
+
+    .direction {
+        width: 435px;
+    }
+
+    .direction__sliders {
+        display: none;
+    }
+
+    .direction__logo {
+        font-size: 48px;
+    }
+
+    .direction__title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .direction__desc {
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+
+    .yoga__lists {
+        display: block;
+        z-index: 2;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: auto;
+    }
+
+    .yoga__list {
+        margin: 15px 0 25px;
+
+    }
+
+    .list__link {
+        text-decoration: none;
+        opacity: 0.5;
+        color: #000000;
+        font-family: "Geometria";
+        font-size: 18px;
+        font-weight: 400;
+
+        &--active {
+            opacity: 1;
+            position: relative;
+            font-weight: 500;
+            &:before {
+                position: absolute;
+                content: "Yoga —";
+                display: inline-block;
+                top: -4px;
+                left: -72px;
+                background-image: linear-gradient(to top, #fc66a2 0%, #f78e6a 100%);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                color: #f78e6a;
+                font-family: "Geometria";
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30px;
+
+            }
+        }
+    }
+    .directions__main-logo {
+        position: absolute;
+        bottom: -40px;
+        right: 5px;
+    }
 
 }

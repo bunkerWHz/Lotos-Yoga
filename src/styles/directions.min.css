@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .directions {
   box-sizing: border-box;
   min-width: calc(375px);
@@ -103,5 +104,70 @@
   margin: 0;
   display: none; }
 
-.direction__main-logo--mobile {
-  display: none; }
+@media screen and (max-width: 767px) {
+  .direction__main-logo--mobile {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .directions .main-header {
+    margin-bottom: 115px; }
+  .directions__content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%; }
+  .direction__lists {
+    width: 435px;
+    margin-right: 110px; }
+  .direction {
+    width: 435px; }
+  .direction__sliders {
+    display: none; }
+  .direction__logo {
+    font-size: 48px; }
+  .direction__title {
+    font-size: 24px;
+    font-weight: 600; }
+  .direction__desc {
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 500; }
+  .yoga__lists {
+    display: block;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: auto; }
+  .yoga__list {
+    margin: 15px 0 25px; }
+  .list__link {
+    text-decoration: none;
+    opacity: 0.5;
+    color: #000000;
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 400; }
+    .list__link--active {
+      opacity: 1;
+      position: relative;
+      font-weight: 500; }
+      .list__link--active:before {
+        position: absolute;
+        content: "Yoga —";
+        display: inline-block;
+        top: -4px;
+        left: -72px;
+        background-image: linear-gradient(to top, #fc66a2 0%, #f78e6a 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color: #f78e6a;
+        font-family: "Geometria";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px; }
+  .directions__main-logo {
+    position: absolute;
+    bottom: -40px;
+    right: 5px; } }
