@@ -13,3 +13,62 @@
 .form__logo--mobile {
     display: none;
 }
+.form__discount {
+color: #000000;
+font-family: "Geometria";
+font-size: 48px;
+line-height: 55px;
+font-weight: 300;
+}
+.discount__sum {
+background-image: linear-gradient(45deg, #f78e6a 0%, #fc66a2 100%);
+background-clip: text;
+color: #000000;
+font-family: "Geometria";
+font-size: 80px;
+
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+}
+
+.form__desc {
+color: #000000;
+font-family: "Geometria";
+font-size: 16px;
+font-weight: 500;
+line-height: 30px;
+width: 265px;
+
+}
+.form__name, .form__phone {
+border: none;
+background-color: transparent;
+padding-bottom: 20px;
+padding-top: 20px;
+width: 100%;
+border-bottom: 1px solid rgba(#000000, 0.2);
+}
+.direction-btn {
+    border: none;
+    padding: 0;
+    margin: 42px 0 30px;
+color: #ffffff;
+font-family: "Geometria";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+&:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+}
+
+.form__laws, .form__rules {
+color: #000000;
+font-family: "Geometria - Extra Light";
+font-size: 12px;
+line-height: 20px;
+font-weight: 600;
+padding: 0;
+margin: 0;
+}

@@ -146,8 +146,8 @@
     position: relative; }
   .hero__logo {
     background: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%);
-    -webkit-text-fill-color: transparent;
     font-family: "Geometria";
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 130px;
     letter-spacing: -5px;
