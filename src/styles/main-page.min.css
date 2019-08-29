@@ -308,7 +308,7 @@
     order: 1;
     margin-top: auto; }
   .pag {
-    background: -webkit-linear-gradient(to right, #f78e6a 0%, #fc66a2 100%);
+    background: linear-gradient(to right, #f78e6a 0%, #fc66a2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 52px;
@@ -317,8 +317,8 @@
     font-weight: 300;
     font-size: 30px; }
     .pag--top {
+      line-height: 48px;
       font-size: 72px;
-      margin-bottom: 25px;
       height: 72px; }
   .main-footer {
     height: 111px; } }
