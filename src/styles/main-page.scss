@@ -3,12 +3,11 @@
     min-width: calc(375px);
     width: calc(100vw - 20px);
     min-height: calc(812px);
-    height: 812px;
+    height: 100vh;
     background-color: #fbf5f4;
     padding: 14px 14px 0 20px;
     position: relative;
     overflow-x: hidden;
-
 }
 
 .main-header {
@@ -225,7 +224,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
+    margin-top: auto;
 }
 
 .pagination {
@@ -249,6 +249,7 @@
     font-family: "Geometria";
     font-size: 30px;
     font-weight: 300;
+    line-height: 30px;
     width: 28px;
 
     &--divider {
@@ -266,6 +267,9 @@
         font-weight: 300;
         line-height: 24px;
     }
+    &--top {
+        margin-bottom: 1px;
+    }
 }
 
 .socials {
@@ -277,6 +281,8 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+    padding: 0;
+    margin: 0;
 }
 
 .social {
