@@ -539,7 +539,8 @@ picture {
   height: 60px;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  background-image: linear-gradient(to right, rgba(247, 142, 106, 0) 0%, #fc66a2 100%); }
   .hero__btn--inside:before {
     top: calc(50% - 8px);
     left: calc(50% - 1px);
@@ -701,16 +702,25 @@ picture {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
-.direction-btn {
-  border: none;
-  padding: 0;
-  margin: 42px 0 30px;
+.form-btn {
+  background-image: none;
+  display: inline-block;
+  width: 284px;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 29px;
+  background-color: #f78e6a;
   color: #ffffff;
   font-family: "Geometria";
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px; }
-  .direction-btn:hover {
+  line-height: 24px;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  margin: 42px 0 30px; }
+  .form-btn:hover {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
 
 .form__laws, .form__rules {
@@ -721,3 +731,36 @@ picture {
   font-weight: 600;
   padding: 0;
   margin: 0; }
+
+.form__btn {
+  margin-right: 11px;
+  position: relative;
+  align-self: flex-start; }
+  .form__btn:before {
+    position: absolute;
+    left: 24px;
+    top: 17px;
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 18px;
+    background-color: #fbf5f4;
+    transform: rotate(90deg); }
+
+.form__btn--inside {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to right, rgba(247, 142, 106, 0) 0%, #fc66a2 100%); }
+  .form__btn--inside:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    background-image: url(/img/btn_envelope.png);
+    background-color: transparent;
+    transform: rotate(180deg);
+    top: calc(50% - 7px);
+    left: calc(50% - 9px); }

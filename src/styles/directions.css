@@ -85,7 +85,8 @@
   height: 60px;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  background-image: linear-gradient(to right, rgba(247, 142, 106, 0) 0%, #fc66a2 100%); }
   .hero__btn--inside:before {
     top: calc(50% - 8px);
     left: calc(50% - 1px);
