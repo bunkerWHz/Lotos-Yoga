@@ -265,10 +265,11 @@
   .main-page {
     min-width: 768px;
     min-height: 1024px;
-    padding-top: 22px; }
+    padding: 0 30px; }
+  .directions__content {
+    margin-top: 50px; }
   .main-header {
-    justify-content: space-between;
-    margin-bottom: 161px; }
+    justify-content: space-between; }
   .hamburger {
     margin-right: 15px;
     float: left; }

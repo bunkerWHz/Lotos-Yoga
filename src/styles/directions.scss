@@ -146,6 +146,8 @@ background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
     .directions {
         min-width: 768px;
         min-height: 1024px;
+        padding: 0 30px;
+
     }
     .directions__content {
         display: flex;

@@ -119,7 +119,8 @@
 @media screen and (min-width: 768px) {
   .directions {
     min-width: 768px;
-    min-height: 1024px; }
+    min-height: 1024px;
+    padding: 0 30px; }
   .directions__content {
     display: flex;
     flex-direction: row;
