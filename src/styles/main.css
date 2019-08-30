@@ -502,6 +502,7 @@ picture {
   font-family: "Geometria";
   font-size: 16px;
   font-weight: 300;
+  line-height: 30px;
   margin-bottom: 37px; }
   .direction__desc:last-of-type {
     margin-bottom: 57px; }
@@ -822,6 +823,81 @@ picture {
     margin-right: 160px; }
   .form__description {
     order: 3; } }
+
+.trainer__sliders {
+  width: 335px;
+  height: 250px; }
+
+.trainer__slider {
+  position: relative;
+  margin-bottom: 157px; }
+
+.trainer__photo {
+  position: absolute;
+  left: calc(50% - 168px / 2);
+  top: -48px; }
+
+.trainers__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 29px; }
+
+.trainer__swiper {
+  position: absolute;
+  top: 50%; }
+  .trainer__swiper--left {
+    left: 0; }
+  .trainer__swiper--right {
+    right: 0; }
+
+.trainer__img {
+  width: 124px;
+  margin: 0 auto;
+  height: 125px;
+  border-radius: 50%;
+  background-image: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%); }
+
+.trainer__name {
+  color: #000000;
+  font-family: "Geometria";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 20px; }
+
+.trainer__title {
+  color: #000000;
+  font-family: "Geometria";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 35px; }
+
+.trainer__desc {
+  color: #000000;
+  font-family: "Geometria";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 38px; }
+  .trainer__desc--mobile {
+    display: none; }
+
+@media screen and (min-width: 768px) {
+  .trainer__name {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 25px; }
+  .trainer__title {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 54px; }
+  .list__link--active:before {
+    content: "Trainer —";
+    left: -90px; } }
 
 @media screen and (min-width: 768px) {
   .form__wrapper--8 {
