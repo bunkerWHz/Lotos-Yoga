@@ -97,6 +97,7 @@
     left: calc(50% - 1px); }
 
 .directions__content {
+  margin-top: 115px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -122,6 +123,7 @@
     min-height: 1024px;
     padding: 0 30px; }
   .directions__content {
+    margin-top: 105px;
     display: flex;
     flex-direction: row;
     position: relative; }
@@ -188,6 +190,7 @@
     min-height: 1080px;
     padding: 0 90px; }
   .directions__content {
+    margin-top: 20px;
     justify-content: flex-start;
     align-items: center; }
   .directions__main-logo {

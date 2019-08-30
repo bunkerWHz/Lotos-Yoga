@@ -116,6 +116,7 @@ background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
 }
 
 .directions__content {
+    margin-top: 115px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,6 +151,7 @@ background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
 
     }
     .directions__content {
+        margin-top: 105px;
         display: flex;
         flex-direction: row;
         position: relative;
@@ -249,6 +251,7 @@ background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
         padding: 0 90px;
     }
     .directions__content {
+        margin-top: 20px;
         justify-content: flex-start;
         align-items: center;
     }

@@ -131,7 +131,7 @@
     margin-top: 170px;
     align-items: center; }
   .form__description {
-    width: 420px;
+    width: 430px;
     margin-right: 14px; }
   .form__logo--mobile {
     margin-right: 0; }
@@ -140,9 +140,21 @@
   .form__discount {
     margin-bottom: 50px; }
   .form__desc {
-    width: 420px;
+    width: 430px;
     line-height: 30px; }
   .form-btn {
     margin-top: 52px; }
   .form__laws {
     width: 290px; } }
+
+@media screen and (min-width: 1920px) {
+  .form {
+    min-width: 1920px;
+    min-height: 1080px;
+    padding: 0 90px; }
+  .form__logo--mobile {
+    order: 2;
+    margin-left: 118px;
+    margin-right: 160px; }
+  .form__description {
+    order: 3; } }
