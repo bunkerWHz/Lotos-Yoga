@@ -147,6 +147,7 @@
   .hero__logo {
     background: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%);
     font-family: "Geometria";
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 130px;
@@ -312,6 +313,7 @@
     margin-top: auto; }
   .pag {
     background: linear-gradient(to right, #f78e6a 0%, #fc66a2 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 52px;

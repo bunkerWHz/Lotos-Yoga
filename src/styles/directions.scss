@@ -87,6 +87,7 @@
     &--left {
 transform: rotate(90deg);
 background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
+background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
     }
@@ -168,8 +169,6 @@ background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
 
     .direction {
         width: 435px;
-        &-btn {
-        }
     }
 
     .direction__sliders {

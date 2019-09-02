@@ -32,6 +32,8 @@
   height: 125px;
   border-radius: 50%;
   background-image: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%); }
+  .trainer__img--desktop {
+    display: none; }
 
 .trainer__name {
   color: #000000;
@@ -61,7 +63,14 @@
   .trainer__desc--mobile {
     display: none; }
 
+.trainer__lists {
+  display: none; }
+
 @media screen and (min-width: 768px) {
+  .trainers {
+    min-width: 768px;
+    min-height: 1024px;
+    padding: 0 30px; }
   .trainer__name {
     font-size: 48px;
     margin: 0;
@@ -70,6 +79,18 @@
     font-size: 24px;
     margin: 0;
     margin-bottom: 54px; }
+  .trainer__desc--mobile {
+    display: block; }
   .list__link--active:before {
     content: "Trainer —";
-    left: -90px; } }
+    left: -90px; }
+  .trainer__slider {
+    display: none; }
+  .trainers__content {
+    margin-top: 105px;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .trainer__img--desktop {
+    display: flex;
+    order: 4; } }
