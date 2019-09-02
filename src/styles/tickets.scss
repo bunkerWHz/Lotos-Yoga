@@ -178,3 +178,22 @@ line-height: 20px;
         bottom: 24px;
     }
 }
+
+@media screen and (min-width: 1920px) {
+
+    .tickets-hero {
+        display: flex;
+        margin-top: 83px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .tickets__logo--mobile {
+        position: initial;
+        margin-left: 160px;
+        margin-right: 188px;
+        order: 2;
+    }
+    .tickets__items {
+        order: 3;
+    }
+}
