@@ -216,7 +216,7 @@ picture {
 .pagination {
   display: flex;
   flex-direction: row;
-  width: 28px;
+  width: 40px;
   flex-wrap: wrap;
   height: 41px; }
 
@@ -224,17 +224,19 @@ picture {
   display: none; }
 
 .pag {
-  height: 20px;
+  height: 27px;
   background-image: linear-gradient(to right, #f78e6a 0%, #fc66a2 100%);
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   color: #f88d6c;
   font-family: "Geometria";
   font-size: 30px;
   font-weight: 300;
   line-height: 30px;
-  width: 28px; }
+  width: 40px; }
   .pag--divider {
+    margin-right: 2px;
     width: 8px;
     font-size: 14px;
     font-weight: 300;
