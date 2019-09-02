@@ -170,6 +170,11 @@ line-height: 20px;
 }
 
 @media screen and (min-width: 768px) {
+    .tickets-page {
+        min-width: 768px;
+        min-height: 1024px;
+        padding: 0 30px; 
+    }
     .tickets__logo--mobile {
         display: initial;
         position: absolute;
@@ -180,6 +185,11 @@ line-height: 20px;
 }
 
 @media screen and (min-width: 1920px) {
+    .tickets-page {
+        min-width: 1920px;
+    min-height: 1080px;
+    padding: 0 90px;
+    }
 
     .tickets-hero {
         display: flex;

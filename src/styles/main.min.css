@@ -1074,6 +1074,10 @@ picture {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
 
 @media screen and (min-width: 768px) {
+  .tickets-page {
+    min-width: 768px;
+    min-height: 1024px;
+    padding: 0 30px; }
   .tickets__logo--mobile {
     display: initial;
     position: absolute;
@@ -1082,6 +1086,10 @@ picture {
     bottom: 24px; } }
 
 @media screen and (min-width: 1920px) {
+  .tickets-page {
+    min-width: 1920px;
+    min-height: 1080px;
+    padding: 0 90px; }
   .tickets-hero {
     display: flex;
     margin-top: 83px;
@@ -1094,6 +1102,62 @@ picture {
     order: 2; }
   .tickets__items {
     order: 3; } }
+
+.schedule-page {
+  box-sizing: border-box;
+  min-width: calc(375px);
+  width: calc(100vw - 20px);
+  min-height: calc(812px);
+  height: 100vh;
+  background-color: #fbf5f4;
+  padding: 0 14px 0px 20px;
+  position: relative;
+  overflow: hidden; }
+
+.schedule-hero {
+  margin-top: 56px; }
+
+.schedule-menu__items {
+  display: grid;
+  grid-template-rows: repeat(8, 76px);
+  grid-template-columns: repeat(7, 201px);
+  grid-gap: 2px;
+  list-style: none; }
+
+.item__content {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  margin: 0 auto;
+  text-align: center;
+  color: #000000;
+  font-family: "Geometria";
+  font-size: 14px;
+  font-weight: 300; }
+
+.schedule-menu__link {
+  text-decoration: none; }
+
+@media screen and (min-width: 768px) {
+  .schedule-page {
+    min-width: 768px;
+    min-height: 1024px;
+    padding: 0 30px; }
+  .schedule-hero {
+    margin-top: 149px; } }
+
+@media screen and (min-width: 1920px) {
+  .schedule-page {
+    min-width: 1920px;
+    min-height: 1080px;
+    padding: 0 90px; }
+  .schedule-hero {
+    margin-top: 141px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .schedule-menu__items {
+    margin-left: 112px;
+    margin-right: 75px; } }
 
 .form__wrapper--8 {
   margin-top: 84px; }
