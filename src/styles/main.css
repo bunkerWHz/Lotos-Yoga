@@ -1241,6 +1241,92 @@ picture {
     margin-left: 112px;
     margin-right: 75px; } }
 
+.clients-page {
+  box-sizing: border-box;
+  min-width: calc(375px);
+  width: calc(100vw - 20px);
+  min-height: calc(812px);
+  height: 100vh;
+  background-color: #fbf5f4;
+  padding: 0 14px 0 20px;
+  position: relative;
+  overflow: hidden; }
+
+.clients__bio {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.client__bio {
+  display: none; }
+  .client__bio--active {
+    display: block; }
+
+.clients__content {
+  margin-top: 73px;
+  display: flex;
+  flex-direction: column; }
+
+.client__name {
+  color: #010101;
+  font-family: "Geometria";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0; }
+
+.client__age {
+  color: #000000;
+  font-family: "Geometria";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0; }
+
+.client__desc {
+  margin: 0;
+  width: 340px;
+  color: #000000;
+  font-family: "Geometria";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px; }
+  .client__desc--mobile {
+    display: none; }
+
+.review__link {
+  color: #f78e6a;
+  font-family: "Geometria";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 27px;
+  margin-bottom: 46px;
+  display: block; }
+
+.client__lists {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.client__list {
+  margin-bottom: 26px; }
+
+@media screen and (min-width: 768px) {
+  .clients-page {
+    min-width: 768px;
+    min-height: 1024px;
+    padding: 0 30px; }
+  .client__lists {
+    display: block; } }
+
+@media screen and (min-width: 1920px) {
+  .clients-page {
+    min-width: 1920px;
+    min-height: 1080px;
+    padding: 0 90px; } }
+
 .form__wrapper--8 {
   margin-top: 84px; }
 
