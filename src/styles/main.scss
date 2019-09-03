@@ -14,9 +14,12 @@
     font-weight: 400;
 }
 @import "norm.css";
-.body {
-    background-color: #f78e6a;
+
+body {
+    background-color: #fbf5f4;
     color: #000000;
+    margin: 0;
+    padding: 0;
 }
 .container {
     margin: 0 auto;
@@ -46,5 +49,6 @@ background-image: linear-gradient(to top, rgba(247, 142, 106, 0) 0%, #fc66a2 100
 @import "trainers.scss";
 @import "tickets.scss";
 @import "schedule.scss";
+@import "clients-page";
 @import "form-8.scss";
 @import "contacts.scss";

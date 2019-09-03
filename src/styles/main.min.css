@@ -15,9 +15,11 @@
   src: url(/fonts/Geometria-ExtraLight.ttf);
   font-weight: 400; }
 
-.body {
-  background-color: #f78e6a;
-  color: #000000; }
+body {
+  background-color: #fbf5f4;
+  color: #000000;
+  margin: 0;
+  padding: 0; }
 
 .container {
   margin: 0 auto;
@@ -473,6 +475,11 @@ picture {
   position: relative;
   overflow: hidden; }
 
+.direction {
+  max-width: 440px;
+  box-sizing: border-box;
+  display: block; }
+
 .direction__lists {
   list-style: none;
   padding: 0;
@@ -493,7 +500,9 @@ picture {
 .direction__sliders {
   width: 70px;
   height: 30px;
-  display: inline-block; }
+  display: inline-block;
+  position: absolute;
+  right: 0px; }
 
 .direction__title {
   color: #000000;
@@ -564,6 +573,7 @@ picture {
 .directions__content {
   margin-top: 115px;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between; }
 
@@ -587,30 +597,34 @@ picture {
     min-width: 768px;
     min-height: 1024px;
     padding: 0 30px; }
+  .direction__main-logo--mobile {
+    position: absolute;
+    bottom: -48px;
+    right: 0; }
   .directions__content {
     margin-top: 105px;
-    display: flex;
+    height: 100%;
     flex-direction: row;
-    position: relative; }
+    position: relative;
+    flex-wrap: wrap; }
   .direction__lists {
-    width: 435px;
     margin-right: 60px;
     margin-bottom: 165px; }
-  .direction {
-    width: 435px; }
   .direction__sliders {
     display: none; }
   .direction__logo {
     font-size: 48px; }
   .direction__title {
     font-size: 24px;
-    font-weight: 600; }
+    font-weight: 400; }
   .direction__desc {
     font-size: 16px;
     line-height: 35px;
-    font-weight: 500; }
+    font-weight: 400; }
   .yoga__lists {
+    margin-left: auto;
     display: block;
+    min-width: 160px;
     z-index: 2;
     padding: 0;
     margin: 0;
@@ -643,11 +657,7 @@ picture {
         font-family: "Geometria";
         font-size: 18px;
         font-weight: 500;
-        line-height: 30px; }
-  .directions__main-logo {
-    position: absolute;
-    bottom: -50px;
-    right: 5px; } }
+        line-height: 30px; } }
 
 @media screen and (min-width: 1920px) {
   .directions {
@@ -657,16 +667,21 @@ picture {
   .directions__content {
     margin-top: 20px;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: nowrap; }
   .directions__main-logo {
+    order: 3; }
+  .direction__main-logo--mobile {
     position: unset;
     order: 3;
     margin-right: 105px;
     margin-left: 75px; }
   .yoga__lists {
     order: 2;
-    margin-left: 110px;
-    margin-top: 120px; }
+    margin-left: 112px;
+    margin-right: 78px;
+    margin-top: 120px;
+    margin-bottom: auto; }
   .direction__lists {
     order: 4;
     margin-top: 120px; } }
@@ -832,32 +847,29 @@ picture {
   .form__description {
     order: 3; } }
 
-.trainer__sliders {
-  width: 335px;
-  height: 250px; }
-
-.trainer__slider {
-  position: relative;
-  margin-bottom: 157px; }
-
 .trainer__photo {
   position: absolute;
   left: calc(50% - 168px / 2);
-  top: -48px; }
+  top: -26px; }
 
 .trainers__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 29px; }
+  position: relative; }
 
 .trainer__swiper {
   position: absolute;
-  top: 50%; }
+  top: 114px; }
   .trainer__swiper--left {
     left: 0; }
   .trainer__swiper--right {
     right: 0; }
+
+.trainers__bio {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
 
 .trainer__img {
   width: 124px;
@@ -867,6 +879,16 @@ picture {
   background-image: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%); }
   .trainer__img--desktop {
     display: none; }
+
+.trainer__portrait {
+  padding-top: 21px;
+  box-sizing: border-box;
+  height: 275px;
+  position: relative;
+  margin-bottom: 30px; }
+
+.trainer__photo--desktop {
+  display: none; }
 
 .trainer__name {
   color: #000000;
@@ -900,10 +922,34 @@ picture {
   display: none; }
 
 @media screen and (min-width: 768px) {
+  .trainer__swiper {
+    display: none; }
   .trainers {
     min-width: 768px;
     min-height: 1024px;
     padding: 0 30px; }
+  .trainers__bio {
+    max-width: 415px;
+    display: flex; }
+  .trainer {
+    box-sizing: border-box;
+    display: block; }
+  .trainer__lists {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    flex-direction: column;
+    list-style: none;
+    margin-right: 0; }
+  .trainer__list {
+    margin-bottom: 26px; }
+  .trainer__photo--mobile {
+    display: none; }
+  .trainer__photo--desktop {
+    display: flex; }
+  .trainer__portrait {
+    display: none; }
   .trainer__name {
     font-size: 48px;
     margin: 0;
@@ -917,16 +963,25 @@ picture {
   .list__link--active:before {
     content: "Trainer —";
     left: -90px; }
-  .trainer__slider {
-    display: none; }
   .trainers__content {
     margin-top: 105px;
-    display: block;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
   .trainer__img--desktop {
     display: flex;
-    order: 4; } }
+    order: 4;
+    position: relative;
+    margin-right: 0;
+    background: url(/img/768_trainer-bg.png) no-repeat;
+    height: 207px;
+    width: 207px;
+    margin-top: -130px; }
+  .trainer__photo--desktop {
+    position: absolute;
+    top: -90px;
+    left: -40px;
+    display: initial; } }
 
 .tickets-page {
   box-sizing: border-box;

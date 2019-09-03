@@ -1,29 +1,20 @@
-.trainer__sliders {
-    width: 335px;
-    height: 250px;
-}
-
-.trainer__slider {
-    position: relative;
-    margin-bottom: 157px;
-}
 
 .trainer__photo {
     position: absolute;
     left: calc(50% - 168px / 2);
-    top: -48px;
+    top: -26px;
 }
 
 .trainers__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 29px;
+    position: relative;
 }
 
 .trainer__swiper {
     position: absolute;
-    top: 50%;
+    top: 114px;
 
     &--left {
         left: 0;
@@ -33,7 +24,11 @@
         right: 0;
     }
 }
-
+.trainers__bio {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 .trainer__img {
     width: 124px;
     margin: 0 auto;
@@ -43,6 +38,16 @@
     &--desktop {
         display: none;
     }
+}
+.trainer__portrait {
+    padding-top: 21px;
+    box-sizing: border-box;
+    height: 275px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.trainer__photo--desktop {
+    display: none;
 }
 
 .trainer__name {
@@ -83,10 +88,44 @@
 }
 
 @media screen and (min-width: 768px) {
+    .trainer__swiper {
+        display: none;
+    }
     .trainers {
         min-width: 768px;
         min-height: 1024px;
         padding: 0 30px;
+    }
+    .trainers__bio {
+        max-width: 415px;
+        display: flex;
+    }
+    .trainer {
+        box-sizing: border-box;
+        display: block;
+    }
+    .trainer__lists {
+display: flex;
+padding: 0;
+margin: 0;
+margin-left: auto;
+flex-direction: column;
+     list-style: none;
+     margin-right: 0;
+    }
+    .trainer__list {
+        margin-bottom: 26px;
+    }
+    .trainer__photo {
+        &--mobile {
+            display: none;
+        }
+        &--desktop {
+            display: flex;
+        }
+    }
+    .trainer__portrait {
+        display: none;
     }
 
     .trainer__name {
@@ -111,20 +150,28 @@
             left: -90px;
         }
 
-        .trainer__slider {
-            display: none;
-        }
-
         .trainers__content {
             margin-top: 105px;
-            display: block;
+            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
         }
-        .trainer__img {
-        &--desktop {
+        .trainer__img--desktop {
             display: flex;
             order: 4;
+            position: relative;
+            margin-right: 0;
+            background: url(/img/768_trainer-bg.png) no-repeat;
+            height: 207px;
+            width: 207px;
+            margin-top: -130px;
+        }
+        .trainer__photo {
+        &--desktop {
+            position: absolute;
+            top: -90px;
+            left: -40px;
+            display: initial;
         }
     }
 }
