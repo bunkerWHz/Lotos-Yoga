@@ -9,43 +9,50 @@
     position: relative;
     overflow: hidden;
 }
+
 .contacts-hero {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .map__logo--mobile {
     position: absolute;
-    top:43px;
+    top: 43px;
     left: calc(50%);
     margin-left: -187px;
     margin-right: -187px;
 }
 
 .adress__title {
-line-height: 16px;
-font-family: "Geometria - Light";
-font-size: 14px;
-font-weight: 300;
+    line-height: 16px;
+    font-family: "Geometria - Light";
+    font-size: 14px;
+    font-weight: 300;
 }
-.adress__loc, .adress__email {
 
-color: #000000;
-font-family: "Geometria";
-font-size: 18px;
-font-weight: 300;
-line-height: 30px;
+.adress__loc,
+.adress__email {
+
+    color: #000000;
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
 }
+
 .adress__copyrights {
-color: #000000;
-font-family: "Geometria";
-font-size: 14px;
-font-weight: 500;
-line-height: 30px;
+    color: #000000;
+    font-family: "Geometria";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
 }
+
 .adress__link {
     margin-bottom: 20px;
 }
+
 .link__icon {
     display: inline-block;
     width: 30px;
@@ -53,99 +60,114 @@ line-height: 30px;
     height: 30px;
     position: relative;
     border-radius: 50%;
-background-color: #ffffff;
-background-image: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%);
-&:before {
-    position: absolute;
-display: inline-block;
-left: 50%;
-z-index: 10;
-}
-&--loc {
-    &:before{
-content: url(/img/btn_icon_location.png);
-width: 12px;
-height: 14px;
-margin-left: -6px;
-top: 7px;
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%);
+
+    &:before {
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        z-index: 10;
+    }
+
+    &--loc {
+        &:before {
+            content: url(/img/btn_icon_location.png);
+            width: 12px;
+            height: 14px;
+            margin-left: -6px;
+            top: 7px;
 
         }
     }
-&--review:before {
-    content: url(/img/btn_icon_envelope.png);
-    width: 14px;
-    height: 10px; 
-margin-left: -7px;
-top: 5px;
 
-}
+    &--review:before {
+        content: url(/img/btn_icon_envelope.png);
+        width: 14px;
+        height: 10px;
+        margin-left: -7px;
+        top: 5px;
+
+    }
 }
 
-.link__map, .link__review {
+.link__map,
+.link__review {
     vertical-align: top;
-color: #000000;
-font-family: "Geometria";
-font-size: 14px;
-font-weight: 300;
-line-height: 24px;
+    color: #000000;
+    font-family: "Geometria";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
 }
+
 .contacts__btn {
     margin: 0;
-margin-top: 57px;
+    margin-top: 57px;
 }
-.contacts__adress{
+
+.contacts__adress {
     margin-top: 273px;
 }
+
 @media screen and (min-width: 768px) {
     .contacts-page {
         min-width: 768px;
         min-height: 1024px;
-        padding: 0 30px; 
+        padding: 0 30px;
     }
+
     .contacts-hero {
         margin-top: 108px;
         position: relative;
-       
+        align-items: flex-start;
     }
-    .map__logo--mobile {
-    display: initial;
-    position: absolute;
-    top: 0;
-    left: 50%;        
-    margin-left: -384px;
-    margin-right: -384px;
 
-    background-image: 
-     linear-gradient(to top, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%),
-     linear-gradient(to left, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%),
-     linear-gradient(to right, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%),
-     linear-gradient(to bottom, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%);
+    .map__logo--mobile {
+        display: initial;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -384px;
+        margin-right: -384px;
+
+        background-image:
+            linear-gradient(to top, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%),
+            linear-gradient(to left, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%),
+            linear-gradient(to right, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%),
+            linear-gradient(to bottom, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%);
     }
+
     .contacts__adress {
         margin-top: 152px;
         z-index: 2;
     }
 }
+
 @media screen and (min-width: 1920px) {
     .contacts-page {
         min-width: 1920px;
-    min-height: 1080px;
-    padding: 0 90px;
+        min-height: 1080px;
+        padding: 0 90px;
     }
+
     .contacts-hero {
         flex-direction: row;
         align-items: center;
         margin-top: 141px;
     }
+
     .map__logo--mobile {
         order: 2;
         margin-left: 112px;
         margin-right: 100px;
     }
+
     .contacts__adress {
         order: 3;
         margin-top: 0;
     }
+
     .map__logo--mobile {
         display: flex;
         position: unset;

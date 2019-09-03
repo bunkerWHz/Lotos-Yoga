@@ -1202,7 +1202,8 @@ picture {
   font-size: 14px;
   font-weight: 300; }
 
-.adress__loc, .adress__email {
+.adress__loc,
+.adress__email {
   color: #000000;
   font-family: "Geometria";
   font-size: 18px;
@@ -1246,7 +1247,8 @@ picture {
     margin-left: -7px;
     top: 5px; }
 
-.link__map, .link__review {
+.link__map,
+.link__review {
   vertical-align: top;
   color: #000000;
   font-family: "Geometria";
@@ -1268,7 +1270,8 @@ picture {
     padding: 0 30px; }
   .contacts-hero {
     margin-top: 108px;
-    position: relative; }
+    position: relative;
+    align-items: flex-start; }
   .map__logo--mobile {
     display: initial;
     position: absolute;
