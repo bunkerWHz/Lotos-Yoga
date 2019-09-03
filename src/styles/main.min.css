@@ -1228,22 +1228,23 @@ picture {
   border-radius: 50%;
   background-color: #ffffff;
   background-image: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%); }
-  .link__icon--loc:after {
+  .link__icon:before {
     position: absolute;
-    background: url(/img/btn_icon_location.png) no-repeat;
     display: inline-block;
+    left: 50%;
+    z-index: 10; }
+  .link__icon--loc:before {
+    content: url(/img/btn_icon_location.png);
     width: 12px;
     height: 14px;
-    top: 50%;
-    left: 50%; }
-  .link__icon--review:after {
-    position: absolute;
-    background: url(/img/btn_icon_envelope.png) no-repeat;
-    display: inline-block;
+    margin-left: -6px;
+    top: 7px; }
+  .link__icon--review:before {
+    content: url(/img/btn_icon_envelope.png);
     width: 14px;
     height: 10px;
-    top: 50%;
-    left: 50%; }
+    margin-left: -7px;
+    top: 5px; }
 
 .link__map, .link__review {
   vertical-align: top;
@@ -1298,4 +1299,4 @@ picture {
     margin-top: 0; }
   .map__logo--mobile {
     display: flex;
-    position: initial; } }
+    position: unset; } }
