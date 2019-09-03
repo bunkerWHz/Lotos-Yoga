@@ -11,12 +11,15 @@
 }
 .contacts-hero {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .map__logo--mobile {
     position: absolute;
     top:43px;
-    left: -20px;
+    left: calc(50%);
+    margin-left: -187px;
+    margin-right: -187px;
 }
 
 .adress__title {
@@ -97,12 +100,16 @@ margin-top: 57px;
     .contacts-hero {
         margin-top: 108px;
         position: relative;
+       
     }
     .map__logo--mobile {
     display: initial;
     position: absolute;
     top: 0;
-    left: -30px;        
+    left: 50%;        
+    margin-left: -384px;
+    margin-right: -384px;
+
     background-image: 
      linear-gradient(to top, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%),
      linear-gradient(to left, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%),
