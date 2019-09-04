@@ -191,7 +191,7 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 30px; }
-  .direction__list .list__link--active {
+  .directions .list__link--active::before {
     content: "Yoga —";
     left: -72px; } }
 

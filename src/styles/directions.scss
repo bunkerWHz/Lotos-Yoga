@@ -245,7 +245,7 @@ background-clip: text;
             }
         }
     }
-    .direction__list .list__link--active {
+    .directions  .list__link--active::before {
         content: "Yoga —";
         left: -72px;
     }
