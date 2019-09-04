@@ -5,7 +5,7 @@
     min-height: calc(812px);
     height: 100vh;
     background-color: #fbf5f4;
-    padding: 0 14px 0px 20px;
+    padding: 0 14px 0px 17px;
     position: relative;
     overflow: hidden;
 }
@@ -26,7 +26,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    margin: 0 41px 15px 0;
+    margin: 0 41px 11px 0;
     color: #f78e6a;
     font-family: "Geometria";
     font-size: 48px;
@@ -48,7 +48,7 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    margin-bottom: 47px;
+    margin-bottom: 41px;
     margin-top: 0;
 }
 
@@ -58,10 +58,10 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 30px;
-    margin-bottom: 37px;
+    margin-bottom: 24px;
 
     &:last-of-type {
-        margin-bottom: 57px;
+        margin-bottom: 22px;
     }
 }
 
@@ -80,8 +80,8 @@
     line-height: 24px;
     position: relative;
     margin: 0 auto;
-    padding-top: 15px;
-    padding-left: 81px;
+    padding-top: 17px;
+    padding-left: 80px;
     text-decoration: none;
 
     &:hover {
@@ -89,8 +89,10 @@
     }
 }
 
-.page-swiper {
+.direction__sliders .page-swiper {
+    top: 19px;
     &--left {
+        right: 9px;
 transform: rotate(90deg);
 background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
 background-clip: text;
@@ -98,6 +100,7 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
     }
     &--right {
+        right: 3px;
         transform: rotate(-90deg);
     }
 }
@@ -125,6 +128,7 @@ background-clip: text;
 
 .directions__content {
 padding: 0;
+padding-top: 98px;
     height: 100%;
     display: flex;
     position: relative;

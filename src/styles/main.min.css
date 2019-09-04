@@ -56,34 +56,36 @@ picture {
 .main-header {
   display: flex;
   flex-direction: row;
-  padding-top: 14px; }
+  padding-top: 11px;
+  padding-right: 5px; }
 
-.main-nav__items {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  position: absolute;
-  top: 0;
-  height: 100vh; }
-
-.main-nav__item {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
-  font-family: "Geometria";
-  font-size: 24px; }
-  .main-nav__item--active {
-    color: #000000; }
-
-.main-nav--closed .main-nav__items {
-  display: none; }
+.main-nav {
+  padding-left: 4px;
+  padding-top: 1px; }
+  .main-nav__items {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    height: 100vh; }
+  .main-nav__item {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Geometria";
+    font-size: 24px; }
+    .main-nav__item--active {
+      color: #000000; }
+  .main-nav--closed .main-nav__items {
+    display: none; }
 
 .hamburger {
   width: 20px;
-  height: 17px;
+  height: 16px;
   margin-top: 4px;
   box-sizing: border-box;
   padding: 0;
@@ -218,14 +220,16 @@ picture {
   justify-content: space-between;
   align-items: flex-end;
   margin-top: auto;
-  padding-bottom: 20px; }
+  padding-bottom: 24px;
+  padding-right: 10px; }
 
 .pagination {
   display: flex;
   flex-direction: row;
   width: 40px;
   flex-wrap: wrap;
-  height: 41px; }
+  height: 45px;
+  margin-left: -1px; }
 
 .pagination--desktop {
   display: none; }
@@ -256,7 +260,9 @@ picture {
     font-weight: 300;
     line-height: 24px; }
   .pag--top {
-    margin-bottom: 1px; }
+    margin-left: -1px;
+    margin-top: -2px;
+    margin-bottom: 2px; }
 
 .socials {
   color: #000000;
@@ -268,7 +274,9 @@ picture {
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-left: 23px;
+  margin-bottom: 2px; }
 
 .social {
   margin-right: 29px; }
@@ -378,7 +386,7 @@ picture {
     min-height: 1080px;
     padding: 0 90px; }
   .main-header {
-    padding-top: 71px; }
+    padding-top: 70px; }
   .page__title {
     display: flex;
     color: #000000;
@@ -468,7 +476,7 @@ picture {
   min-height: calc(812px);
   height: 100vh;
   background-color: #fbf5f4;
-  padding: 0 14px 0px 20px;
+  padding: 0 14px 0px 17px;
   position: relative;
   overflow: hidden; }
 
@@ -487,7 +495,7 @@ picture {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  margin: 0 41px 15px 0;
+  margin: 0 41px 11px 0;
   color: #f78e6a;
   font-family: "Geometria";
   font-size: 48px;
@@ -507,7 +515,7 @@ picture {
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
-  margin-bottom: 47px;
+  margin-bottom: 41px;
   margin-top: 0; }
 
 .direction__desc {
@@ -516,9 +524,9 @@ picture {
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
-  margin-bottom: 37px; }
+  margin-bottom: 24px; }
   .direction__desc:last-of-type {
-    margin-bottom: 57px; }
+    margin-bottom: 22px; }
 
 .direction-btn {
   background-image: none;
@@ -535,21 +543,24 @@ picture {
   line-height: 24px;
   position: relative;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-left: 81px;
+  padding-top: 17px;
+  padding-left: 80px;
   text-decoration: none; }
   .direction-btn:hover {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
 
-.page-swiper--left {
-  transform: rotate(90deg);
-  background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-.page-swiper--right {
-  transform: rotate(-90deg); }
+.direction__sliders .page-swiper {
+  top: 19px; }
+  .direction__sliders .page-swiper--left {
+    right: 9px;
+    transform: rotate(90deg);
+    background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .direction__sliders .page-swiper--right {
+    right: 3px;
+    transform: rotate(-90deg); }
 
 .hero__btn--inside {
   width: 60px;
@@ -569,6 +580,7 @@ picture {
 
 .directions__content {
   padding: 0;
+  padding-top: 98px;
   height: 100%;
   display: flex;
   position: relative;

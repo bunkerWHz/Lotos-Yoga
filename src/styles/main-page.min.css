@@ -12,34 +12,36 @@
 .main-header {
   display: flex;
   flex-direction: row;
-  padding-top: 14px; }
+  padding-top: 11px;
+  padding-right: 5px; }
 
-.main-nav__items {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  position: absolute;
-  top: 0;
-  height: 100vh; }
-
-.main-nav__item {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
-  font-family: "Geometria";
-  font-size: 24px; }
-  .main-nav__item--active {
-    color: #000000; }
-
-.main-nav--closed .main-nav__items {
-  display: none; }
+.main-nav {
+  padding-left: 4px;
+  padding-top: 1px; }
+  .main-nav__items {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    height: 100vh; }
+  .main-nav__item {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Geometria";
+    font-size: 24px; }
+    .main-nav__item--active {
+      color: #000000; }
+  .main-nav--closed .main-nav__items {
+    display: none; }
 
 .hamburger {
   width: 20px;
-  height: 17px;
+  height: 16px;
   margin-top: 4px;
   box-sizing: border-box;
   padding: 0;
@@ -174,14 +176,16 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-top: auto;
-  padding-bottom: 20px; }
+  padding-bottom: 24px;
+  padding-right: 10px; }
 
 .pagination {
   display: flex;
   flex-direction: row;
   width: 40px;
   flex-wrap: wrap;
-  height: 41px; }
+  height: 45px;
+  margin-left: -1px; }
 
 .pagination--desktop {
   display: none; }
@@ -212,7 +216,9 @@
     font-weight: 300;
     line-height: 24px; }
   .pag--top {
-    margin-bottom: 1px; }
+    margin-left: -1px;
+    margin-top: -2px;
+    margin-bottom: 2px; }
 
 .socials {
   color: #000000;
@@ -224,7 +230,9 @@
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-left: 23px;
+  margin-bottom: 2px; }
 
 .social {
   margin-right: 29px; }
@@ -334,7 +342,7 @@
     min-height: 1080px;
     padding: 0 90px; }
   .main-header {
-    padding-top: 71px; }
+    padding-top: 70px; }
   .page__title {
     display: flex;
     color: #000000;
