@@ -21,8 +21,9 @@
     display: block; }
 
 .clients__content {
-  margin-top: 73px;
+  padding: 0;
   display: flex;
+  height: 100%;
   flex-direction: column; }
 
 .client-page__logo--mobile {
@@ -108,10 +109,8 @@
     .client__desc--mobile {
       width: 475px; }
   .clients__content {
-    margin-top: 108px;
     flex-direction: row;
-    position: relative;
-    height: 100%; }
+    position: relative; }
   .client__lists {
     display: block;
     min-width: 172px; }
@@ -134,8 +133,7 @@
     min-height: 1080px;
     padding: 0 90px; }
   .clients__content {
-    align-items: center;
-    margin-top: 80px; }
+    align-items: center; }
   .client__lists {
     order: 2;
     margin-top: 70px;

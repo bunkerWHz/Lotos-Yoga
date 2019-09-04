@@ -7,6 +7,8 @@
 
 .trainers__content {
     display: flex;
+    height: 100%;
+    padding: 0;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
@@ -151,9 +153,7 @@ flex-direction: column;
         }
 
         .trainers__content {
-            margin-top: 105px;
             display: flex;
-            height: 100%;
             flex-direction: row;
             flex-wrap: wrap;
         }

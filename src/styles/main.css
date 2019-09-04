@@ -160,10 +160,11 @@ picture {
       opacity: 0.7; }
 
 .hero {
-  margin-top: 55px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  height: 100%; }
   .hero__desc {
     display: flex;
     flex-direction: row;
@@ -313,8 +314,6 @@ picture {
     min-width: 768px;
     min-height: 1024px;
     padding: 0 30px; }
-  .directions__content {
-    margin-top: 50px; }
   .main-header {
     justify-content: space-between; }
   .hamburger {
@@ -336,7 +335,6 @@ picture {
   .main__logo {
     margin: 0 auto; }
   .hero {
-    margin-top: 155px;
     flex-direction: row;
     justify-content: space-between; }
     .hero__content {
@@ -385,10 +383,10 @@ picture {
     display: flex;
     color: #000000;
     margin: 0;
+    align-self: center;
     line-height: 18px;
     font-family: "Geometria";
     font-size: 18px;
-    margin-left: 799px;
     font-weight: 400;
     position: relative; }
     .page__title:before {
@@ -407,7 +405,6 @@ picture {
       display: flex;
       margin: 0; }
   .hero {
-    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -571,7 +568,8 @@ picture {
     left: calc(50% - 1px); }
 
 .directions__content {
-  margin-top: 115px;
+  padding: 0;
+  height: 100%;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -602,8 +600,6 @@ picture {
     bottom: -48px;
     right: 0; }
   .directions__content {
-    margin-top: 105px;
-    height: 100%;
     flex-direction: row;
     position: relative;
     flex-wrap: wrap; }
@@ -666,7 +662,6 @@ picture {
     min-height: 1080px;
     padding: 0 90px; }
   .directions__content {
-    margin-top: 20px;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap; }
@@ -680,7 +675,6 @@ picture {
   .yoga__lists {
     order: 2;
     margin-left: 112px;
-    margin-right: 78px;
     margin-top: 120px;
     margin-bottom: auto; }
   .direction__lists {
@@ -720,6 +714,8 @@ picture {
   -webkit-background-clip: text; }
 
 .form__wrapper {
+  height: 100%;
+  padding: 0;
   display: flex;
   flex-direction: column; }
 
@@ -817,7 +813,6 @@ picture {
     display: flex; }
   .form__wrapper {
     flex-direction: row;
-    margin-top: 170px;
     align-items: center; }
   .form__description {
     width: 430px;
@@ -855,6 +850,8 @@ picture {
 
 .trainers__content {
   display: flex;
+  height: 100%;
+  padding: 0;
   flex-direction: column;
   justify-content: space-between;
   position: relative; }
@@ -965,9 +962,7 @@ picture {
     content: "Trainer —";
     left: -90px; }
   .trainers__content {
-    margin-top: 105px;
     display: flex;
-    height: 100%;
     flex-direction: row;
     flex-wrap: wrap; }
   .trainer__img {
@@ -1029,7 +1024,9 @@ picture {
   overflow: hidden; }
 
 .tickets-hero {
-  position: relative; }
+  padding: 0;
+  position: relative;
+  height: 100%; }
 
 .tickets__items {
   display: grid;
@@ -1184,7 +1181,6 @@ picture {
     padding: 0 90px; }
   .tickets-hero {
     display: flex;
-    margin-top: 83px;
     flex-direction: row;
     align-items: center; }
   .tickets__logo--mobile {
@@ -1207,7 +1203,8 @@ picture {
   overflow: hidden; }
 
 .schedule-hero {
-  margin-top: 56px; }
+  height: 100%;
+  padding: 0; }
 
 .schedule-menu__items {
   display: grid;
@@ -1257,9 +1254,7 @@ picture {
   .schedule-page {
     min-width: 768px;
     min-height: 1024px;
-    padding: 0 30px; }
-  .schedule-hero {
-    margin-top: 149px; } }
+    padding: 0 30px; } }
 
 @media screen and (min-width: 1920px) {
   .schedule-page {
@@ -1267,7 +1262,6 @@ picture {
     min-height: 1080px;
     padding: 0 90px; }
   .schedule-hero {
-    margin-top: 141px;
     display: flex;
     flex-direction: row;
     align-items: center; }
@@ -1297,8 +1291,9 @@ picture {
     display: block; }
 
 .clients__content {
-  margin-top: 73px;
+  padding: 0;
   display: flex;
+  height: 100%;
   flex-direction: column; }
 
 .client-page__logo--mobile {
@@ -1384,10 +1379,8 @@ picture {
     .client__desc--mobile {
       width: 475px; }
   .clients__content {
-    margin-top: 108px;
     flex-direction: row;
-    position: relative;
-    height: 100%; }
+    position: relative; }
   .client__lists {
     display: block;
     min-width: 172px; }
@@ -1410,8 +1403,7 @@ picture {
     min-height: 1080px;
     padding: 0 90px; }
   .clients__content {
-    align-items: center;
-    margin-top: 80px; }
+    align-items: center; }
   .client__lists {
     order: 2;
     margin-top: 70px;
@@ -1431,15 +1423,7 @@ picture {
     order: 3; } }
 
 .form__wrapper--8 {
-  margin-top: 84px; }
-
-@media screen and (min-width: 768px) {
-  .form__wrapper--8 {
-    margin-top: 175px; } }
-
-@media screen and (min-width: 1920px) {
-  .form__wrapper--8 {
-    margin-top: 95px; } }
+  padding-top: 0; }
 
 .contacts-page {
   box-sizing: border-box;
@@ -1453,6 +1437,7 @@ picture {
   overflow: hidden; }
 
 .contacts-hero {
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column; }
@@ -1537,19 +1522,18 @@ picture {
     min-height: 1024px;
     padding: 0 30px; }
   .contacts-hero {
-    margin-top: 108px;
     position: relative;
     align-items: flex-start; }
   .map__logo--mobile {
     display: initial;
     position: absolute;
-    top: 0;
+    top: 102px;
     left: 50%;
     margin-left: -384px;
     margin-right: -384px;
     background-image: linear-gradient(to top, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%), linear-gradient(to left, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%), linear-gradient(to right, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%), linear-gradient(to bottom, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%); }
   .contacts__adress {
-    margin-top: 152px;
+    margin-top: 260px;
     z-index: 2; } }
 
 @media screen and (min-width: 1920px) {
@@ -1558,9 +1542,9 @@ picture {
     min-height: 1080px;
     padding: 0 90px; }
   .contacts-hero {
+    padding: 0;
     flex-direction: row;
-    align-items: center;
-    margin-top: 141px; }
+    align-items: center; }
   .map__logo--mobile {
     order: 2;
     margin-left: 112px;

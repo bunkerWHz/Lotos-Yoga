@@ -10,7 +10,8 @@
   overflow: hidden; }
 
 .schedule-hero {
-  margin-top: 56px; }
+  height: 100%;
+  padding: 0; }
 
 .schedule-menu__items {
   display: grid;
@@ -60,9 +61,7 @@
   .schedule-page {
     min-width: 768px;
     min-height: 1024px;
-    padding: 0 30px; }
-  .schedule-hero {
-    margin-top: 149px; } }
+    padding: 0 30px; } }
 
 @media screen and (min-width: 1920px) {
   .schedule-page {
@@ -70,7 +69,6 @@
     min-height: 1080px;
     padding: 0 90px; }
   .schedule-hero {
-    margin-top: 141px;
     display: flex;
     flex-direction: row;
     align-items: center; }

@@ -10,7 +10,9 @@
     overflow: hidden;
 }
 .tickets-hero {
+    padding: 0;
     position: relative;
+    height: 100%;
 }
 .tickets__items {
     display: grid;
@@ -193,7 +195,6 @@ line-height: 20px;
 
     .tickets-hero {
         display: flex;
-        margin-top: 83px;
         flex-direction: row;
         align-items: center;
     }

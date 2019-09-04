@@ -34,6 +34,8 @@ font-size: 80px;
 
 }
 .form__wrapper {
+    height: 100%;
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -142,7 +144,6 @@ margin: 0;
     }
     .form__wrapper {
         flex-direction: row;
-        margin-top: 170px;
         align-items: center;
     }
     .form__description {

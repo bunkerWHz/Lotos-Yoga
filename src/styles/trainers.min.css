@@ -6,6 +6,8 @@
 
 .trainers__content {
   display: flex;
+  height: 100%;
+  padding: 0;
   flex-direction: column;
   justify-content: space-between;
   position: relative; }
@@ -116,9 +118,7 @@
     content: "Trainer —";
     left: -90px; }
   .trainers__content {
-    margin-top: 105px;
     display: flex;
-    height: 100%;
     flex-direction: row;
     flex-wrap: wrap; }
   .trainer__img {

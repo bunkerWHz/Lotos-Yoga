@@ -106,7 +106,8 @@
     left: calc(50% - 1px); }
 
 .directions__content {
-  margin-top: 115px;
+  padding: 0;
+  height: 100%;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -137,8 +138,6 @@
     bottom: -48px;
     right: 0; }
   .directions__content {
-    margin-top: 105px;
-    height: 100%;
     flex-direction: row;
     position: relative;
     flex-wrap: wrap; }
@@ -201,7 +200,6 @@
     min-height: 1080px;
     padding: 0 90px; }
   .directions__content {
-    margin-top: 20px;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap; }
@@ -215,7 +213,6 @@
   .yoga__lists {
     order: 2;
     margin-left: 112px;
-    margin-right: 78px;
     margin-top: 120px;
     margin-bottom: auto; }
   .direction__lists {

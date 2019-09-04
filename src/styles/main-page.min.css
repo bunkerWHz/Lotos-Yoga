@@ -116,10 +116,11 @@
       opacity: 0.7; }
 
 .hero {
-  margin-top: 55px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  height: 100%; }
   .hero__desc {
     display: flex;
     flex-direction: row;
@@ -269,8 +270,6 @@
     min-width: 768px;
     min-height: 1024px;
     padding: 0 30px; }
-  .directions__content {
-    margin-top: 50px; }
   .main-header {
     justify-content: space-between; }
   .hamburger {
@@ -292,7 +291,6 @@
   .main__logo {
     margin: 0 auto; }
   .hero {
-    margin-top: 155px;
     flex-direction: row;
     justify-content: space-between; }
     .hero__content {
@@ -341,10 +339,10 @@
     display: flex;
     color: #000000;
     margin: 0;
+    align-self: center;
     line-height: 18px;
     font-family: "Geometria";
     font-size: 18px;
-    margin-left: 799px;
     font-weight: 400;
     position: relative; }
     .page__title:before {
@@ -363,7 +361,6 @@
       display: flex;
       margin: 0; }
   .hero {
-    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

@@ -11,6 +11,7 @@
 }
 
 .contacts-hero {
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -118,7 +119,6 @@
     }
 
     .contacts-hero {
-        margin-top: 108px;
         position: relative;
         align-items: flex-start;
     }
@@ -126,7 +126,7 @@
     .map__logo--mobile {
         display: initial;
         position: absolute;
-        top: 0;
+        top: 102px;
         left: 50%;
         margin-left: -384px;
         margin-right: -384px;
@@ -139,7 +139,7 @@
     }
 
     .contacts__adress {
-        margin-top: 152px;
+        margin-top: 260px;
         z-index: 2;
     }
 }
@@ -152,9 +152,9 @@
     }
 
     .contacts-hero {
+        padding: 0;
         flex-direction: row;
         align-items: center;
-        margin-top: 141px;
     }
 
     .map__logo--mobile {
