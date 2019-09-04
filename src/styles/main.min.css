@@ -388,7 +388,7 @@ picture {
     line-height: 18px;
     font-family: "Geometria";
     font-size: 18px;
-    margin-left: 300px;
+    margin-left: 799px;
     font-weight: 400;
     position: relative; }
     .page__title:before {
@@ -967,6 +967,7 @@ picture {
   .trainers__content {
     margin-top: 105px;
     display: flex;
+    height: 100%;
     flex-direction: row;
     flex-wrap: wrap; }
   .trainer__img--desktop {
@@ -983,6 +984,38 @@ picture {
     top: -90px;
     left: -40px;
     display: initial; } }
+
+@media screen and (min-width: 1920px) {
+  .trainers__content {
+    align-items: center; }
+  .trainer__lists {
+    order: 2;
+    margin: 0;
+    margin-left: 102px;
+    margin-top: 89px;
+    margin-bottom: auto; }
+  .trainers__bio {
+    order: 4;
+    margin: 0;
+    margin-top: 89px;
+    margin-bottom: auto; }
+  .trainer__desc {
+    font-size: 18px;
+    width: 465px; }
+  .trainer__img--desktop {
+    order: 3;
+    margin: 0;
+    margin-left: 119px;
+    margin-right: 102px;
+    margin-top: 132px;
+    margin-bottom: auto;
+    width: 335px;
+    height: 335px;
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%); }
+  .trainer__photo--desktop {
+    left: -62px;
+    top: -132px; } }
 
 .tickets-page {
   box-sizing: border-box;
