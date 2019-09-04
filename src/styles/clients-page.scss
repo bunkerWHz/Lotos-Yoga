@@ -25,6 +25,9 @@
     display: flex;
     flex-direction: column;
 }
+.client-page__logo--mobile {
+    display: none;
+}
 
 .client__name {
 color: #010101;
@@ -129,7 +132,8 @@ margin-bottom: 26px;
             left: -81px;
         }
     }
-    .client__photo--desktop {
+    .client-page__logo {
+        display: block;
         position: absolute;
         bottom: -23px;
         right: 3px;
@@ -164,7 +168,7 @@ margin-bottom: 26px;
         margin-bottom: auto;
         margin-left: 560px;
     }
-    .client__photo--desktop {
+    .client-page__logo {
         top: unset;
         bottom: 102px;
         left: 37px;

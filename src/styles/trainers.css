@@ -121,7 +121,7 @@
     height: 100%;
     flex-direction: row;
     flex-wrap: wrap; }
-  .trainer__img--desktop {
+  .trainer__img {
     display: flex;
     order: 4;
     position: relative;

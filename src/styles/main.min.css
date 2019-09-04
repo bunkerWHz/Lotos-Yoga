@@ -970,7 +970,7 @@ picture {
     height: 100%;
     flex-direction: row;
     flex-wrap: wrap; }
-  .trainer__img--desktop {
+  .trainer__img {
     display: flex;
     order: 4;
     position: relative;
@@ -1301,6 +1301,9 @@ picture {
   display: flex;
   flex-direction: column; }
 
+.client-page__logo--mobile {
+  display: none; }
+
 .client__name {
   color: #010101;
   font-family: "Geometria";
@@ -1391,7 +1394,8 @@ picture {
     .client__lists .list__link--active:before {
       content: "Client —";
       left: -81px; }
-  .client__photo--desktop {
+  .client-page__logo {
+    display: block;
     position: absolute;
     bottom: -23px;
     right: 3px;
@@ -1419,7 +1423,7 @@ picture {
     margin-top: 70px;
     margin-bottom: auto;
     margin-left: 560px; }
-  .client__photo--desktop {
+  .client-page__logo {
     top: unset;
     bottom: 102px;
     left: 37px;
