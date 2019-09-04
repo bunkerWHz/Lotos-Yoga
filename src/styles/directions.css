@@ -180,10 +180,8 @@
       font-weight: 500; }
       .list__link--active:before {
         position: absolute;
-        content: "Yoga —";
         display: inline-block;
         top: -4px;
-        left: -72px;
         background-image: linear-gradient(to top, #fc66a2 0%, #f78e6a 100%);
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -192,7 +190,10 @@
         font-family: "Geometria";
         font-size: 18px;
         font-weight: 500;
-        line-height: 30px; } }
+        line-height: 30px; }
+  .direction__list .list__link--active {
+    content: "Yoga —";
+    left: -72px; } }
 
 @media screen and (min-width: 1920px) {
   .directions {

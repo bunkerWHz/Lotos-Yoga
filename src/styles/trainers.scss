@@ -145,7 +145,7 @@ flex-direction: column;
             display: block;
         }
     }
-        .list__link--active:before {
+        .trainer__lists .list__link--active:before {
             content: "Trainer —";
             left: -90px;
         }

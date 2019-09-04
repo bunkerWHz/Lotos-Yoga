@@ -229,10 +229,9 @@ background-clip: text;
             font-weight: 500;
             &:before {
                 position: absolute;
-                content: "Yoga —";
+               
                 display: inline-block;
                 top: -4px;
-                left: -72px;
                 background-image: linear-gradient(to top, #fc66a2 0%, #f78e6a 100%);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -245,6 +244,10 @@ background-clip: text;
 
             }
         }
+    }
+    .direction__list .list__link--active {
+        content: "Yoga —";
+        left: -72px;
     }
 }
 
