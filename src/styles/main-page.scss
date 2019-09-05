@@ -1,11 +1,11 @@
 .main-page {
     box-sizing: border-box;
     min-width: calc(375px);
-    width: calc(100vw - 20px);
+    width: calc(100vw - 17px);
     min-height: calc(812px);
     height: 100vh;
     background-color: #fbf5f4;
-    padding: 0 14px 0 20px;
+    padding: 0 14px 0px 17px;
     position: relative;
     overflow: hidden;
 }
@@ -114,7 +114,7 @@
 }
 
 .hero__btn {
-    margin-right: 11px;
+    margin-right: 8px;
     position: relative;
     align-self: flex-start;
 
@@ -155,14 +155,19 @@
 
 .hero {
     padding: 0;
+    padding-top: 52px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    &__pic {
+        margin-left: -4px;
+    }
     &__desc {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-left: -2px;
         width: 341px;
         box-sizing: border-box;
 
@@ -180,7 +185,7 @@
 
     &__content {
         box-sizing: border-box;
-        margin-top: 43px;
+        margin-top: 3px;
         display: flex;
         flex-direction: column;
     }
@@ -189,6 +194,7 @@
         box-sizing: border-box;
         padding: 0;
         position: relative;
+        margin-bottom: 10px;
     }
 
     &__logo {
@@ -199,13 +205,14 @@
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         font-size: 130px;
-        letter-spacing: -5px;
+        letter-spacing: -7px;
+        margin-left: 6px;
         font-weight: 500;
 
         &-title {
             position: absolute;
-            bottom: 59px;
-            left: -44px;
+            bottom: 57px;
+            left: -42px;
             margin-bottom: 3px;
             background-image: linear-gradient(to right, #f78e6a 0%, #fc66a2 100%);
             background-clip: text;
