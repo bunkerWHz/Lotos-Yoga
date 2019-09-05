@@ -1264,7 +1264,19 @@ picture {
 
 .schedule-hero {
   height: 100%;
-  padding: 0; }
+  padding: 0;
+  padding-top: 50px; }
+
+.item__content {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 30px 20px 0 20px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Geometria";
+  font-size: 14px;
+  vertical-align: top; }
 
 .schedule-menu__items {
   display: grid;
@@ -1282,20 +1294,10 @@ picture {
   .schedule-menu__items > li:nth-child(7n+8) {
     color: #f78e6a;
     font-weight: 700; }
-  .schedule-menu__items > li:first-child {
+  .schedule-menu__items > li:first-child .item__content {
+    padding: 22px 20px 0 32px;
     text-align: left;
     color: #010101; }
-
-.item__content {
-  box-sizing: border-box;
-  background-color: #ffffff;
-  padding: 30px 20px 0 20px;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  font-family: "Geometria";
-  font-size: 14px;
-  vertical-align: top; }
 
 .schedule-item__icon {
   width: 30px;
@@ -1303,6 +1305,7 @@ picture {
   height: 30px;
   display: inline-block;
   margin-right: 20px;
+  margin-top: 2px;
   background: url(/img/btn_download.png) no-repeat; }
 
 .schedule-menu__link {
