@@ -1,8 +1,16 @@
 .form__wrapper--8 {
-padding-top: 0;
+padding-top: 79px;
+padding-left: 3px;
 }
-
-
+.form__desc--8 {
+width: 320px;
+}
+.form__phone {
+    margin-bottom: 21px;
+}
+.form__discount--8  {
+    margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
     .form__wrapper--8 {
     }
