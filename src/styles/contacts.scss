@@ -139,6 +139,7 @@ margin-bottom: 18px;
     .contacts-hero {
         position: relative;
         align-items: flex-start;
+        padding-top: 252px;
     }
 
     .map__logo--mobile {
@@ -157,8 +158,11 @@ margin-bottom: 18px;
     }
 
     .contacts__adress {
-        margin-top: 260px;
+        margin: 0px;
         z-index: 2;
+    }
+    .contacts__btn {
+        margin-top: 36px;
     }
 }
 

@@ -1747,7 +1747,8 @@ picture {
     padding: 0 30px; }
   .contacts-hero {
     position: relative;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding-top: 252px; }
   .map__logo--mobile {
     display: initial;
     position: absolute;
@@ -1757,8 +1758,10 @@ picture {
     margin-right: -384px;
     background-image: linear-gradient(to top, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%), linear-gradient(to left, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%), linear-gradient(to right, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%), linear-gradient(to bottom, rgba(251, 245, 244, 0) 0%, #fbf5f4 100%); }
   .contacts__adress {
-    margin-top: 260px;
-    z-index: 2; } }
+    margin: 0px;
+    z-index: 2; }
+  .contacts__btn {
+    margin-top: 36px; } }
 
 @media screen and (min-width: 1920px) {
   .contacts-page {
