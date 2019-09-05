@@ -1300,12 +1300,19 @@ picture {
     min-width: 768px;
     min-height: 1024px;
     padding: 0 30px; }
+  .tickets-hero {
+    padding-top: 183px; }
+  .tickets__items {
+    margin-top: 0; }
   .tickets__logo--mobile {
     display: initial;
     position: absolute;
     z-index: 2;
-    right: -11px;
-    bottom: 24px; } }
+    right: -19px;
+    bottom: 140px; }
+  .tickets-btn {
+    margin-top: 55px;
+    padding-top: 17px; } }
 
 @media screen and (min-width: 1920px) {
   .tickets-page {
