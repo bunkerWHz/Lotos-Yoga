@@ -14,7 +14,7 @@
 
 .form__discount {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 29px;
   color: #000000;
   font-family: "Geometria";
   font-size: 48px;
@@ -33,6 +33,7 @@
 .form__wrapper {
   height: 100%;
   padding: 0;
+  padding-top: 85px;
   display: flex;
   flex-direction: column; }
 
@@ -42,13 +43,15 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
-  width: 310px; }
+  width: 280px;
+  margin: 0;
+  margin-bottom: 20px; }
 
 .form__name, .form__phone {
   border: none;
   background-color: transparent;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 9px;
+  padding-top: 10px;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   opacity: 0.6;
@@ -56,12 +59,13 @@
   font-family: "Geometria";
   font-size: 16px;
   font-weight: 300;
-  line-height: 35px; }
+  line-height: 35px;
+  margin-bottom: 21px; }
 
 .form-btn {
   background-image: none;
   display: inline-block;
-  width: 284px;
+  width: 272px;
   height: 60px;
   box-sizing: border-box;
   border-radius: 29px;
@@ -75,7 +79,8 @@
   text-decoration: none;
   border: none;
   padding: 0;
-  margin: 42px 0 30px; }
+  padding-left: 28px;
+  margin: 20px 2px 25px; }
   .form-btn:hover {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); }
 
@@ -85,8 +90,10 @@
   font-size: 12px;
   line-height: 20px;
   font-weight: 600;
+  width: 300px;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-left: 1px; }
 
 .form__btn {
   margin-right: 11px;
