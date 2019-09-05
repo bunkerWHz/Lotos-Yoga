@@ -111,13 +111,16 @@
 @media screen and (min-width: 768px) {
   .trainer__swiper {
     display: none; }
-  .trainers {
+  .trainers-page {
     min-width: 768px;
     min-height: 1024px;
     padding: 0 30px; }
   .trainers__bio {
     max-width: 415px;
     display: flex; }
+  .trainers__content {
+    padding: 0;
+    padding-top: 101px; }
   .trainer {
     box-sizing: border-box;
     display: block; }
@@ -140,16 +143,21 @@
   .trainer__name {
     font-size: 48px;
     margin: 0;
-    margin-bottom: 25px; }
+    margin-bottom: 21px; }
   .trainer__title {
     font-size: 24px;
     margin: 0;
-    margin-bottom: 54px; }
-  .trainer__desc--mobile {
-    display: block; }
+    margin-bottom: 40px; }
+  .trainer__desc {
+    margin-bottom: 25px; }
+    .trainer__desc--mobile {
+      margin-bottom: 54px;
+      display: block; }
   .trainer__lists .list__link--active:before {
     content: "Trainer —";
     left: -90px; }
+  .trainer__list {
+    margin-bottom: 22px; }
   .trainers__content {
     display: flex;
     flex-direction: row;
@@ -162,11 +170,12 @@
     background: url(/img/768_trainer-bg.png) no-repeat;
     height: 207px;
     width: 207px;
-    margin-top: -130px; }
+    margin-top: -260px;
+    margin-right: 28px; }
   .trainer__photo--desktop {
     position: absolute;
-    top: -90px;
-    left: -40px;
+    top: -87px;
+    left: -38px;
     display: initial; } }
 
 @media screen and (min-width: 1920px) {
