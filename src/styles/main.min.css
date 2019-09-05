@@ -893,11 +893,14 @@ picture {
     min-height: 1024px;
     padding: 0 30px; }
   .form__logo--mobile {
-    display: flex; }
+    display: flex;
+    margin-top: -40px; }
   .form__wrapper {
+    padding-top: 99px;
     flex-direction: row;
     align-items: center; }
   .form__description {
+    height: 600px;
     width: 430px;
     margin-right: 14px; }
   .form__logo--mobile {
@@ -905,12 +908,15 @@ picture {
   .discount__sum {
     font-size: 80px; }
   .form__discount {
-    margin-bottom: 50px; }
+    margin-left: -4px;
+    margin-bottom: 42px; }
   .form__desc {
+    margin: 0;
+    margin-bottom: 38px;
     width: 430px;
     line-height: 30px; }
   .form-btn {
-    margin-top: 52px; }
+    margin-top: 29px; }
   .form__laws {
     width: 290px; } }
 
