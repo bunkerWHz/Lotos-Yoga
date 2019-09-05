@@ -329,10 +329,16 @@ picture {
     min-height: 1024px;
     padding: 0 30px; }
   .main-header {
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 27px; }
   .hamburger {
-    margin-right: 15px;
+    margin-right: 14px;
     float: left; }
+  .main-nav {
+    padding: 0;
+    padding-left: 4px;
+    margin-top: -1px; }
   .menu__title {
     display: flex;
     color: #000000;
@@ -347,16 +353,49 @@ picture {
     text-decoration: none;
     font-weight: 500; }
   .main__logo {
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-right: 168px;
+    margin-top: -5px; }
   .hero {
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-top: 55px; }
+    .hero__desc {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 60px; }
+      .hero__desc-content {
+        font-size: 20px;
+        line-height: 30px;
+        width: 350px;
+        margin: 0; }
     .hero__content {
-      order: 1; }
+      margin: 0;
+      padding: 0;
+      order: 1;
+      width: 420px;
+      height: auto; }
+    .hero__wrapper {
+      margin: 0; }
+    .hero__btn {
+      margin-right: 20px;
+      align-self: center; }
     .hero__pic {
-      margin-right: calc(-90px);
-      order: 2;
-      margin-bottom: 93px; }
+      margin: 0;
+      margin-right: -104px;
+      order: 2; }
+    .hero__logo {
+      margin-top: -23px;
+      font-size: 150px; }
+      .hero__logo-title {
+        font-size: 18px;
+        bottom: 66px;
+        left: -45px; }
   .pagination {
     width: 64px;
     height: 102px;
@@ -365,7 +404,9 @@ picture {
       order: 3; }
   .socials {
     order: 2;
-    margin-top: auto; }
+    margin-top: auto;
+    margin-left: 62px;
+    margin-bottom: 1px; }
   .page-swiper {
     order: 1;
     margin-top: auto; }
@@ -382,8 +423,16 @@ picture {
     .pag--top {
       line-height: 48px;
       font-size: 72px;
-      height: 72px; }
+      height: 72px;
+      margin: 0;
+      margin-right: -7px;
+      margin-top: -9px;
+      margin-bottom: 7px; }
+    .pag--divider {
+      margin: 0;
+      margin-right: 7px; }
   .main-footer {
+    padding: 0;
     padding-bottom: 21px; } }
 
 @media screen and (min-width: 1920px) {
