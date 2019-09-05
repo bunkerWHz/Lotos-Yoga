@@ -1355,6 +1355,7 @@ picture {
 
 .clients__content {
   padding: 0;
+  padding-top: 67px;
   display: flex;
   height: 100%;
   flex-direction: column; }
@@ -1362,13 +1363,17 @@ picture {
 .client-page__logo--mobile {
   display: none; }
 
+.client__photo--mobile {
+  margin-bottom: 16px; }
+
 .client__name {
   color: #010101;
   font-family: "Geometria";
   font-size: 30px;
   font-weight: 400;
   line-height: 40px;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 6px; }
 
 .client__age {
   color: #000000;
@@ -1376,7 +1381,8 @@ picture {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 16px; }
 
 .client__desc {
   margin: 0;
@@ -1395,8 +1401,8 @@ picture {
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
-  margin-top: 27px;
-  margin-bottom: 46px;
+  margin-top: 14px;
+  margin-bottom: 42px;
   display: block; }
 
 .client__lists {
