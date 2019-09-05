@@ -86,7 +86,29 @@ margin-bottom: 26px;
     left: unset; 
     right: 40px; 
 }
-
+.clients-btn {
+    width: 284px;
+    background-image: none;
+        display: inline-block;
+        height: 60px;
+        box-sizing: border-box;
+        border-radius: 29px;
+        background-color: #f78e6a;
+        color: #ffffff;
+        font-family: "Geometria";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 17px;
+        padding-left: 80px;
+        text-decoration: none;
+    
+        &:hover {
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        }
+        }
 
 
 @media screen and (min-width: 768px) {
@@ -95,10 +117,15 @@ margin-bottom: 26px;
         min-height: 1024px;
         padding: 0 30px;
     }
+   
+    .clients-btn {
+        width: 276px;
+            }
     .client__portrait {
         width: 340px;
         height: 160px;
-        margin-bottom: 45px;
+        margin-bottom: 39px;
+        margin-top: 4px;
     }
     .client__img {
         display: inline-block;
@@ -108,11 +135,14 @@ margin-bottom: 26px;
     .client__age {
         display: inline-block;
     }
+    .client__list {
+        margin-bottom: 22px;
+    }
     .client__name {
         display: inline-block;
         width: 135px;
         margin-top: 45px;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
     .client__desc--mobile {
         display: block;
@@ -122,14 +152,17 @@ margin-bottom: 26px;
     }
     .client__desc {
         width: 440px;
-        margin-bottom: 33px;
+        margin-bottom: 24px;
         &--mobile {
             width: 475px;
+            margin-bottom: 43px;
+
         }
     }
     .clients__content {
         flex-direction: row;
         position: relative;
+        padding-top: 100px;
     }
     .client__lists {
         display: block;
@@ -148,7 +181,7 @@ margin-bottom: 26px;
     }
     .clients__bio {
         z-index: 3;
-        margin-right: 80px;
+        margin-right: 76px;
     }
 }
 
