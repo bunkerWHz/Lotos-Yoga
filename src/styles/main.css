@@ -1106,7 +1106,7 @@ picture {
     display: none; }
 
 .ticket__wrapper {
-  padding: 40px;
+  padding: 35px 40px 35px 38px;
   position: relative; }
 
 .item__name {
@@ -1117,7 +1117,7 @@ picture {
   line-height: 20px;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 18px; }
 
 .item__icon {
   display: inline-block;
@@ -1126,7 +1126,7 @@ picture {
   height: 40px;
   background-color: #f7f3f2;
   position: absolute;
-  top: 50px;
+  top: 49px;
   right: 20px; }
   .item__icon:before {
     content: "";
@@ -1135,15 +1135,15 @@ picture {
     width: 2px;
     height: 12px;
     background-color: #c9c4c3;
-    left: 50%;
-    top: 35%;
+    left: calc(50% - 1px);
+    top: calc(35% + -1px);
     transform: rotate(90deg); }
   .item__icon:after {
     content: "";
     position: absolute;
     display: inline-block;
     width: 2px;
-    left: 50%;
+    left: calc(50% - 1px);
     top: 35%;
     height: 12px;
     background-color: #c9c4c3; }
@@ -1165,7 +1165,9 @@ picture {
   font-family: "Geometria";
   font-size: 24px;
   font-weight: 700;
-  line-height: 20px; }
+  line-height: 20px;
+  margin-left: 2px;
+  margin-right: 2px; }
 
 .item__currency {
   color: #000000;
@@ -1201,7 +1203,7 @@ picture {
 .tickets-btn {
   background-image: none;
   display: inline-block;
-  width: 284px;
+  width: 290px;
   height: 60px;
   box-sizing: border-box;
   border-radius: 29px;
@@ -1213,7 +1215,7 @@ picture {
   line-height: 24px;
   position: relative;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 35px;
   padding-top: 15px;
   padding-left: 81px;
   text-decoration: none; }
