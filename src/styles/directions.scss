@@ -174,13 +174,15 @@ padding-top: 98px;
         flex-direction: row;
         position: relative;
         flex-wrap: wrap;
+        padding: 0;
+        padding-top: 84px;
     }
 
 
     .direction__lists {
-        margin-right: 60px;
+        margin-right: 108px;
         margin-bottom: 165px;
-
+        margin-top: 8px;
     }
 
     .direction__sliders {
@@ -194,12 +196,17 @@ padding-top: 98px;
     .direction__title {
         font-size: 24px;
         font-weight: 400;
+        margin-bottom: 38px;
     }
 
     .direction__desc {
         font-size: 16px;
         line-height: 35px;
+        margin-bottom: 21px;
         font-weight: 400;
+        &:last-of-type {
+            margin-bottom: 51px;
+        }
     }
 
     .yoga__lists {
@@ -214,7 +221,7 @@ padding-top: 98px;
     }
 
     .yoga__list {
-        margin: 15px 0 25px;
+        margin: 15px 0 22px;
 
     }
 
@@ -251,6 +258,9 @@ padding-top: 98px;
     .directions  .list__link--active::before {
         content: "Yoga —";
         left: -72px;
+    }
+    .direction__main-logo--mobile {
+        bottom: -33px;
     }
 }
 
