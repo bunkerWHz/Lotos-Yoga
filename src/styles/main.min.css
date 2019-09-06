@@ -45,7 +45,15 @@ picture {
 @media screen and (min-width: 1920px) {
   .btn {
     width: 60px;
-    height: 60px; } }
+    height: 60px; }
+    .btn:after {
+      left: 29px;
+      top: 20px;
+      height: 20px; }
+    .btn:before {
+      height: 20px;
+      top: 20px;
+      left: 29px; } }
 
 .main-page {
   box-sizing: border-box;
@@ -491,19 +499,11 @@ picture {
       margin-left: 2px; }
     .hero__desc {
       margin-top: 9px; }
-    .hero__btn {
-      margin: 0;
-      margin-top: 5px;
-      margin-left: -8px;
-      margin-right: 29px; }
-      .hero__btn:after {
-        left: 29px;
-        top: 20px;
-        height: 20px; }
-      .hero__btn:before {
-        height: 20px;
-        top: 20px;
-        left: 29px; }
+  .main-page .hero__btn {
+    margin: 0;
+    margin-top: 5px;
+    margin-left: -8px;
+    margin-right: 29px; }
   .hero__logo {
     margin: 0;
     font-size: 200px;
@@ -785,25 +785,34 @@ picture {
     min-width: 1920px;
     min-height: 1080px;
     padding: 0 90px; }
+  .direction {
+    max-width: 100%; }
+    .direction__desc {
+      font-size: 18px;
+      line-height: 35px; }
   .directions__content {
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    padding-top: 0; }
   .directions__main-logo {
     order: 3; }
   .direction__main-logo--mobile {
     position: unset;
     order: 3;
     margin-right: 105px;
-    margin-left: 75px; }
+    margin-left: 74px;
+    margin-top: 19px; }
   .yoga__lists {
     order: 2;
-    margin-left: 112px;
-    margin-top: 120px;
+    margin-left: 110px;
+    margin-top: 123px;
     margin-bottom: auto; }
   .direction__lists {
     order: 4;
-    margin-top: 120px; } }
+    margin-top: 24px;
+    width: 500px;
+    min-height: 500px; } }
 
 .form {
   box-sizing: border-box;

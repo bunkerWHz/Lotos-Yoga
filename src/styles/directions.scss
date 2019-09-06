@@ -271,10 +271,18 @@ padding-top: 98px;
         min-height: 1080px;
         padding: 0 90px;
     }
+    .direction {
+        max-width: 100%;
+        &__desc {
+            font-size: 18px;
+            line-height: 35px;
+        }
+    }
     .directions__content {
         justify-content: flex-start;
         align-items: center;
         flex-wrap: nowrap;
+        padding-top: 0;
     }
     .directions__main-logo {
         order: 3;
@@ -283,17 +291,20 @@ padding-top: 98px;
         position: unset;
         order: 3;
         margin-right: 105px;
-        margin-left: 75px;
+        margin-left: 74px;
+        margin-top: 19px;
     }
     .yoga__lists {
         order: 2;
-        margin-left: 112px;
-        margin-top: 120px;
+        margin-left: 110px;
+        margin-top: 123px;
         margin-bottom: auto;
     }
     .direction__lists {
         order: 4;
-        margin-top: 120px;
+        margin-top: 24px;
+        width: 500px;
+        min-height: 500px;
     }
    
 }
