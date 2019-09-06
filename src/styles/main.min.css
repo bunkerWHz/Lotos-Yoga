@@ -1758,6 +1758,20 @@ picture {
   .form-btn--8 {
     margin-top: 30px; } }
 
+@media screen and (min-width: 1920px) {
+  .form__wrapper--8 {
+    padding: 0; }
+  .form-8__logo--mobile {
+    margin-top: 5px;
+    margin-left: 170px;
+    margin-right: 128px; }
+  .form__description--8 {
+    width: 450px; }
+  .form__discount--8 {
+    margin-bottom: 41px; }
+  .form__desc--8 {
+    margin-bottom: 39px; } }
+
 .contacts-page {
   box-sizing: border-box;
   min-width: calc(375px);
