@@ -43,6 +43,12 @@ height: 50px;
 background-color: #f78e6a;
 background-image: linear-gradient(to top, rgba(247, 142, 106, 0) 0%, #fc66a2 100%);
 }
+@media screen and (min-width: 1920px) {
+    .btn {
+        width: 60px;
+        height: 60px;
+    }
+}
 @import "main-page.scss";
 @import "directions.scss";
 @import "form.scss";

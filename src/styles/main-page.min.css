@@ -397,7 +397,9 @@
     min-height: 1080px;
     padding: 0 90px; }
   .main-header {
-    padding-top: 70px; }
+    padding-top: 68px; }
+  .page__phone {
+    margin-right: -1px; }
   .page__title {
     display: flex;
     color: #000000;
@@ -407,11 +409,12 @@
     font-family: "Geometria";
     font-size: 18px;
     font-weight: 400;
-    position: relative; }
+    position: relative;
+    margin-right: -273px; }
     .page__title:before {
       border-radius: 50%;
-      top: calc(50% - 2px);
-      left: -10px;
+      top: calc(50% - 3px);
+      left: -15px;
       content: "";
       display: inline-block;
       position: absolute;
@@ -424,21 +427,28 @@
       display: flex;
       margin: 0; }
   .hero {
+    padding-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center; }
+    .hero__wrapper {
+      margin-left: 3px; }
     .hero__content {
-      margin: 0; }
+      width: auto;
+      margin: 0;
+      margin-top: -38px; }
   .hero__logo {
-    font-size: 200px; }
+    font-size: 200px;
+    letter-spacing: normal; }
     .hero__logo-title {
-      left: -70px;
-      bottom: 92px;
+      left: -66px;
+      bottom: 90px;
       font-size: 24px; }
   .hero__pic {
     order: 1;
     margin: 0;
+    margin-top: 16px;
     margin-right: 111px;
     margin-left: 142px; }
   .pagination {
@@ -449,6 +459,19 @@
       order: 10; }
     .pagination--mobile {
       display: none; }
+  .pag {
+    height: auto; }
+    .pag--top {
+      margin: 0;
+      margin-right: -8px;
+      margin-top: 15px;
+      margin-bottom: 20px; }
+    .pag--divider {
+      margin: 0; }
+    .pag--bottom {
+      margin: 0;
+      margin-left: 7px;
+      margin-right: -2px; }
   .socials {
     order: 1;
     padding: 0;
