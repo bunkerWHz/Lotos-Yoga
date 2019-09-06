@@ -1289,7 +1289,7 @@ picture {
     height: 12px;
     background-color: #c9c4c3;
     left: calc(50% - 1px);
-    top: calc(35% + -1px);
+    top: 35%;
     transform: rotate(90deg); }
   .item__icon:after {
     content: "";
@@ -1381,7 +1381,7 @@ picture {
     min-height: 1024px;
     padding: 0 30px; }
   .tickets-hero {
-    padding-top: 183px; }
+    padding: 0; }
   .tickets__items {
     margin-top: 0; }
   .tickets__logo--mobile {
@@ -1406,10 +1406,23 @@ picture {
   .tickets__logo--mobile {
     position: initial;
     margin-left: 160px;
+    margin-top: -18px;
     margin-right: 188px;
     order: 2; }
   .tickets__items {
-    order: 3; } }
+    order: 3;
+    margin-top: -69px; }
+  .ticket__wrapper {
+    padding: 36px 40px 35px 37px; }
+  .item__name {
+    margin-bottom: 19px; }
+  .item__icon {
+    top: 50px;
+    right: 21px; }
+  .tickets-btn {
+    margin-top: 56px;
+    width: 292px;
+    margin-left: -2px; } }
 
 .schedule-page {
   box-sizing: border-box;
