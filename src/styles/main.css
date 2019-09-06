@@ -1500,12 +1500,22 @@ picture {
     min-height: 1080px;
     padding: 0 90px; }
   .schedule-hero {
+    padding: 0;
     display: flex;
     flex-direction: row;
     align-items: center; }
+  .item__content {
+    padding-left: 17px; }
   .schedule-menu__items {
+    margin-top: 4px;
     margin-left: 112px;
-    margin-right: 75px; } }
+    margin-right: 75px; }
+    .schedule-menu__items > li:first-child .item__content {
+      padding: 22px 20px 0 30px;
+      text-align: left;
+      color: #010101; }
+  .schedule-item__icon {
+    margin-right: 19px; } }
 
 .clients-page {
   box-sizing: border-box;
