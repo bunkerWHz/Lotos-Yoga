@@ -176,7 +176,7 @@ flex-direction: column;
     .trainer__title {
         font-size: 24px;
         margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 41px;
     }
 
     .trainer__desc {
@@ -220,32 +220,47 @@ flex-direction: column;
     }
 }
 @media screen and (min-width: 1920px) {
+    .trainers-page {
+        min-width: 1920px;
+        min-height: 1080px;
+        padding: 0 90px;
+    }
     .trainers__content {
+        padding: 0;
         align-items: center;
+    }
+    .trainer__lists .list__link--active:before {
+        content: "Trainer —";
+        left: -89px;
     }
     .trainer__lists {
         order: 2;
         margin: 0;
-        margin-left: 102px;
-        margin-top: 89px;
+        margin-left: 109px;
+        margin-top: 138px;
         margin-bottom: auto;
     }
     .trainers__bio {
         order: 4;
         margin: 0;
-        margin-top: 89px;
+        margin-top: 140px;
         margin-bottom: auto;
+        width: 500px;
+        min-height: 400px;
     }
     .trainer__desc {
         font-size: 18px;
-        width: 465px;
+        width: 490px;
+    }
+    .trainer__name {
+        margin-left: -4px;
     }
     .trainer__img--desktop {
         order: 3;
         margin: 0;
         margin-left: 119px;
-        margin-right: 102px;
-        margin-top: 132px;
+        margin-right: 103px;
+        margin-top: 184px;
         margin-bottom: auto;
 width: 335px;
 height: 335px;
