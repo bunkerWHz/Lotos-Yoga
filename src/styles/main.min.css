@@ -484,21 +484,39 @@ picture {
     .hero__wrapper {
       margin-left: 3px; }
     .hero__content {
+      height: 400px;
       width: auto;
       margin: 0;
-      margin-top: -38px; }
+      margin-top: 50px;
+      margin-left: 2px; }
+    .hero__desc {
+      margin-top: 9px; }
+    .hero__btn {
+      margin: 0;
+      margin-top: 5px;
+      margin-left: -8px;
+      margin-right: 29px; }
+      .hero__btn:after {
+        left: 29px;
+        top: 20px;
+        height: 20px; }
+      .hero__btn:before {
+        height: 20px;
+        top: 20px;
+        left: 29px; }
   .hero__logo {
+    margin: 0;
     font-size: 200px;
     letter-spacing: normal; }
     .hero__logo-title {
-      left: -66px;
+      left: -70px;
       bottom: 90px;
       font-size: 24px; }
   .hero__pic {
     order: 1;
     margin: 0;
     margin-top: 16px;
-    margin-right: 111px;
+    margin-right: 116px;
     margin-left: 142px; }
   .pagination {
     height: 130px;
@@ -524,7 +542,9 @@ picture {
   .socials {
     order: 1;
     padding: 0;
-    margin-bottom: 0; }
+    margin: 0;
+    margin-right: auto;
+    margin-top: 3px; }
   .next-page__title {
     display: flex;
     order: 2;
