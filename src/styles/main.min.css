@@ -560,17 +560,7 @@ picture {
   .main-footer {
     height: auto;
     align-items: center;
-    padding-bottom: 61px; }
-  .main-nav--opened {
-    position: relative; }
-    .main-nav--opened .main-nav__items {
-      display: inline-block;
-      text-align: left;
-      height: auto;
-      width: auto;
-      top: 0; }
-    .main-nav--opened .main-nav__link {
-      margin-bottom: 27px; } }
+    padding-bottom: 61px; } }
 
 .directions {
   box-sizing: border-box;
@@ -1252,9 +1242,6 @@ picture {
   width: 280px;
   height: 140px;
   background-color: #ffffff; }
-  .ticket__item input[type=radio]:checked .item__icon {
-    background-color: #ffffff;
-    background-image: linear-gradient(to right, #f78e6a 0%, #fc66a2 100%); }
   .ticket__item input[type=radio] {
     display: none; }
 

@@ -27,9 +27,6 @@
   width: 280px;
   height: 140px;
   background-color: #ffffff; }
-  .ticket__item input[type=radio]:checked .item__icon {
-    background-color: #ffffff;
-    background-image: linear-gradient(to right, #f78e6a 0%, #fc66a2 100%); }
   .ticket__item input[type=radio] {
     display: none; }
 

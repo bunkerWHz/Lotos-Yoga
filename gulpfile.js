@@ -7,14 +7,19 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const server = require('browser-sync').create();
 sass.compiler = require('node-sass');
+const uncss = require('gulp-uncss');
+
 
 gulp.task('style', () => {
 
   return gulp.src('./src/styles/*.scss')
   .pipe(plumber())
   .pipe(sass.sync().on('error', sass.logError))
-  .pipe(gulp.dest('./src/styles/'))
-  .pipe(rename({suffix: ".min",}))
+.pipe(gulp.dest('./src/styles/'))
+  .pipe(rename({suffix: ".min"}))
+  .pipe(uncss({
+    html: ['index.html', './src/*.html']
+  }))
   .pipe(gulp.dest('./src/styles/'))
   .pipe(server.stream());
 });

@@ -503,14 +503,4 @@
   .main-footer {
     height: auto;
     align-items: center;
-    padding-bottom: 61px; }
-  .main-nav--opened {
-    position: relative; }
-    .main-nav--opened .main-nav__items {
-      display: inline-block;
-      text-align: left;
-      height: auto;
-      width: auto;
-      top: 0; }
-    .main-nav--opened .main-nav__link {
-      margin-bottom: 27px; } }
+    padding-bottom: 61px; } }
