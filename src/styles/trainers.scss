@@ -1,29 +1,28 @@
 
 .trainer__photo {
     position: absolute;
-    left: calc(50% - 168px / 2);
-    top: -26px;
+    left: calc(50% - 152px / 2);
+    top: -50px;
 }
 
 .trainers__content {
-    display: flex;
-    height: 100%;
-    padding: 0;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+  padding-top: 29px;
 }
 
 .trainer__swiper {
     position: absolute;
-    top: 114px;
-
+    margin: 0;
+    top: 139px;
     &--left {
-        left: 0;
+        transform: rotate(90deg);
+        left: 0 !important;
+        right: unset !important;
     }
 
     &--right {
-        right: 0;
+        transform: rotate(270deg);
+        right: 4px !important;
+        left:unset !important;
     }
 }
 .trainers__bio {
@@ -34,6 +33,7 @@
 .trainer__img {
     width: 124px;
     margin: 0 auto;
+    margin-left: calc(50% - 52px);
     height: 125px;
     border-radius: 50%;
     background-image: linear-gradient(to top, #f78e6a 0%, #fc66a2 100%);
@@ -42,12 +42,9 @@
     }
 }
 .trainer__portrait {
-    padding-top: 24px;
     box-sizing: border-box;
     height: 275px;
     position: relative;
-    margin-bottom: 26px;
-    margin-left: 15px;
 }
 .trainer__photo--desktop {
     display: none;
@@ -60,7 +57,9 @@
     font-weight: 400;
     line-height: 36px;
     margin: 0;
+    margin-top: 2px;
     margin-bottom: 5px;
+    letter-spacing: -0.3px;
 }
 
 .trainer__title {
@@ -71,7 +70,7 @@
     font-weight: 400;
     line-height: 36px;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 }
 .trainer-btn {
     background-image: none;
@@ -102,8 +101,8 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 30px;
-    margin-bottom: 33px;
-
+    margin-bottom: 30px;
+    letter-spacing: -0.1px;
     &--mobile {
         display: none;
     }
