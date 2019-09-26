@@ -14,7 +14,12 @@
     font-weight: 400;
 }
 @import "norm.css";
-
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #fbf5f4;
     color: #000000;
@@ -59,6 +64,10 @@ background-image: linear-gradient(to top, rgba(247, 142, 106, 0) 0%, #fc66a2 100
         }
     }
 }
+@import "_main-header.scss";
+@import "_main-footer.scss";
+@import "_page-content.scss";
+@import "screen-page.scss";
 @import "main-page.scss";
 @import "directions.scss";
 @import "form.scss";

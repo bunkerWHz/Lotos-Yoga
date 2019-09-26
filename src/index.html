@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <section class="main-page" id="1">
+    <section class="main-page screen-page" id="main-page">
         <div class="container">
             <header class="main-header">
 
@@ -43,42 +43,42 @@
                     
                     <ul class="main-nav__items">
                         <li class="main-nav__link">
-                            <a href="#1" class="main-nav__item main-nav__item--active">Главная</a>
+                            <a href="#main-page" class="main-nav__item main-nav__item--active">Главная</a>
                         </li>
                         <li class="main-nav__link">
-                            <a href="#2" class="main-nav__item">Направления</a>
+                            <a href="#direction" class="main-nav__item">Направления</a>
                         </li>
                         <li class="main-nav__link">
-                            <a href="#3" class="main-nav__item">Преподаватели</a>
+                            <a href="#trainers" class="main-nav__item">Преподаватели</a>
 
                         </li>
                         <li class="main-nav__link">
-                            <a href="#4" class="main-nav__item">Абонементы</a>
+                            <a href="#tickets" class="main-nav__item">Абонементы</a>
 
                         </li>
                         <li class="main-nav__link">
-                            <a href="#5" class="main-nav__item">Расписание</a>
+                            <a href="#schedule" class="main-nav__item">Расписание</a>
 
                         </li>
                         <li class="main-nav__link">
-                            <a href="#6" class="main-nav__item">Отзывы</a>
+                            <a href="#clients-page" class="main-nav__item">Отзывы</a>
 
                         </li>
                         <li class="main-nav__link">
-                            <a href="#7" class="main-nav__item">Контакты</a>
+                            <a href="#contacts" class="main-nav__item">Контакты</a>
                         </li>
                     </ul>
                 </nav>
 
                 <picture class="main__logo">
                     <source srcset="/img/768_main_logo.png" media="(min-width:768px) and (max-width:1919px)">
-                    <img src="/img/375_main_logo.png" alt="logo">
+                    <img src="/img/375_main_logo.png" alt="logo" class="main__logo">
                 </picture>
                 <h2 class="page__title">Добро пожаловать</h2>
                 <a href="tel:+78123455697"class="page__phone">+7 (812) 345-56-97</a>
             </header>
 
-            <div class="hero">
+            <div class="hero page-content">
              <img  class="main__logo main__logo--desktop" src="/img/768_main_logo.png" alt="logo">
 
                 <picture class="hero__pic">
@@ -121,7 +121,7 @@
         </div>
     </section>
 
-<section class="directions" id="2">
+<section class="screen-page" id="directions">
         <div class="container">
                 <header class="main-header">
     
@@ -170,9 +170,10 @@
                     <a href="tel:+78123455697"class="page__phone">+7 (812) 345-56-97</a>
                 </header>
     
-                <div class="directions__content">
+                <div class="directions__content page-content">
 
                  <img  class="main__logo main__logo--desktop" src="/img/768_main_logo.png" alt="logo">
+                 
                  <div class="direction__sliders"> 
                         <a href="#" class="slider-swiper page-swiper page-swiper--left">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="page-swiper__img" width="30" height="30" viewBox="0 0 30 30"><defs><linearGradient id="4p4ca" x1="15" x2="15" y1="30" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="var(--color-stop-1)" stop-opacity="0"/><stop offset="1" stop-color="var(--color-stop-2)"/></linearGradient></defs><g><g><path fill="var(--color-stop-1)" d="M15 0c8.284 0 15 6.715 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.715 6.716 0 15 0z"/><path fill="url(#4p4ca)" d="M15 0c8.284 0 15 6.715 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.715 6.716 0 15 0z"/></g><g><path class="left" fill="var(--fill-arrow)" d="M15.003 19.011l-3.005-6.02h6.011z"/></g></g></svg>
@@ -251,7 +252,7 @@
                 </footer>
 
 </section>
-<section class="form" id="3">
+<section class="screen-page" id="form">
         <div class="container">
                 <header class="main-header">
     
@@ -302,7 +303,7 @@
 
 
 
-    <div class="form__wrapper">
+    <div class="page-content form__content">
             <img  class="main__logo main__logo--desktop" src="/img/768_main_logo.png" alt="logo">
                
 
@@ -353,7 +354,7 @@
                 </footer>
 </section>
 
-<section class="trainers-page" id="4">
+<section class="screen-page" id="trainers">
         <div class="container">
                 <header class="main-header">
     
@@ -402,7 +403,7 @@
                     <a href="tel:+78123455697"class="page__phone">+7 (812) 345-56-97</a>
                 </header>
     
-                <div class="trainers__content">
+                <div class="page-content">
 
                  <img  class="main__logo main__logo--desktop" src="/img/768_main_logo.png" alt="logo">
                 
@@ -501,7 +502,7 @@
 
 </section>
 
-<section class="tickets-page" id="5">
+<section class="screen-page" id="tickets">
         <div class="container">
             <header class="main-header">
 
@@ -550,7 +551,7 @@
                 <a href="tel:+78123455697"class="page__phone">+7 (812) 345-56-97</a>
             </header>
 
-            <div class="tickets-hero">
+            <div class="page-content">
              <img  class="main__logo main__logo--desktop" src="/img/768_main_logo.png" alt="logo">
 
              <div class="tickets__items">
@@ -668,7 +669,7 @@
     </section>
 
 
-    <section class="schedule-page" id="6">
+    <section class="screen-page" id="schedule">
             <div class="container">
                 <header class="main-header">
     
@@ -717,7 +718,7 @@
                     <a href="tel:+78123455697"class="page__phone">+7 (812) 345-56-97</a>
                 </header>
     
-                <div class="schedule-hero">
+                <div class="schedule-hero page-content">
                  <img  class="main__logo main__logo--desktop" src="/img/768_main_logo.png" alt="logo">
     
 
@@ -927,7 +928,7 @@
 
 
 
-        <section class="clients-page" id="7">
+        <section class="screen-page" id="clients">
                 <div class="container">
                         <header class="main-header">
             
@@ -976,7 +977,7 @@
                             <a href="tel:+78123455697"class="page__phone">+7 (812) 345-56-97</a>
                         </header>
             
-                        <div class="clients__content">
+                        <div class="clients__content page-content">
         
                          <img  class="main__logo main__logo--desktop" src="/img/768_main_logo.png" alt="logo">
                         
@@ -1084,7 +1085,7 @@
 
 
 
-<section class="form" id="8">
+<section class="screen-page" id="form-8">
         <div class="container">
                 <header class="main-header">
     
@@ -1135,7 +1136,7 @@
 
 
 
-    <div class="form__wrapper form__wrapper--8">
+    <div class="form__wrapper form__wrapper--8 page-content">
             <img  class="main__logo main__logo--desktop" src="/img/768_main_logo.png" alt="logo">
                
 
@@ -1186,7 +1187,7 @@
                 </footer>
 </section>
 
-<section class="contacts-page" id="9">
+<section class="screen-page" id="contacts">
         <div class="container">
                 <header class="main-header">
     
@@ -1237,7 +1238,7 @@
 
 
 
-    <div class="contacts-hero">
+    <div class="contacts-hero page-content">
             <img  class="main__logo main__logo--desktop" src="/img/768_main_logo.png" alt="logo">
             
 

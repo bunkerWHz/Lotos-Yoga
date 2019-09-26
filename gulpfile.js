@@ -16,7 +16,14 @@ gulp.task('style', () => {
 const plugins = [
         autoprefixer(),
         cssnano(),
-	require("postcss-uncss")({
+require("stylelint")({ 
+ extends: ["stylelint-config-recommended"],
+  rules: {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true
+  }
+ }),
+require("postcss-uncss")({
 html: "./src/index.html",
 css: "./src/*.css"
 })

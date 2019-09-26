@@ -1,0 +1,209 @@
+.main-header {
+    display: flex;
+    height: 25px;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.main-nav {
+
+    &__items {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+    }
+
+    &__item {
+        text-decoration: none;
+        color: rgba(#000000, 0.5);
+        font-family: "Geometria";
+        font-size: 24px;
+
+        &--active {
+            color: #000000;
+        }
+    }
+
+    &--closed .main-nav__items {
+        display: none;
+    }
+}
+
+.hamburger {
+    width: 20px;
+    height: 16px;
+    margin-top: 6px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__line {
+        display: inline-block;
+        height: 2px;
+        width: 20px;
+        background-color: #f78e6a;
+        position: absolute;
+
+        &:before {
+            position: absolute;
+            left: -4px;
+            content: "";
+            width: 2px;
+            height: 2px;
+            display: block;
+            background-color: #000000;
+        }
+
+        &--top {
+            top: 0;
+        }
+
+        &--middle {
+            top: 7px;
+        }
+
+        &--bottom {
+            width: 14px;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+.main__logo {
+    margin-left: auto;
+
+    &--desktop {
+        display: none;
+    }
+}
+
+.menu__title {
+    display: none;
+}
+
+.page__title {
+    display: none;
+}
+
+.page__phone {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .main-header {
+        justify-content: space-between;
+        padding: 0;
+        padding-top: 27px;
+    }
+
+    .hamburger {
+        margin-right: 14px;
+        float: left;
+    }
+
+    .main-nav {
+        padding: 0;
+        padding-left: 4px;
+        margin-top: -1px;
+    }
+
+    .menu__title {
+        display: flex;
+        color: #000000;
+        font-family: "Geometria";
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .page__phone {
+        display: flex;
+        color: #000000;
+        font-family: "Montserrat";
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .main__logo {
+        margin: 0 auto;
+        margin-right: 168px;
+        margin-top: -5px;
+    }
+
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    .main-header {
+        padding-top: 68px;
+    }
+
+    .page__phone {
+        margin-right: -1px;
+    }
+
+    .page__title {
+        display: flex;
+        color: #000000;
+        margin: 0;
+        align-self: center;
+        line-height: 18px;
+        font-family: "Geometria";
+        font-size: 18px;
+        font-weight: 400;
+        position: relative;
+        margin-right: -273px;
+
+        &:before {
+            border-radius: 50%;
+            top: calc(50% - 3px);
+            left: -15px;
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background-color: #f78e6a;
+        }
+    }
+
+    .main__logo {
+        display: none;
+
+        &--desktop {
+            display: flex;
+            margin: 0;
+        }
+    }
+
+    .main-nav--opened {
+        position: relative;
+
+        .main-nav__items {
+            display: inline-block;
+            text-align: left;
+            height: auto;
+            width: auto;
+            top: 0;
+
+        }
+
+        .main-nav__link {
+            margin-bottom: 27px;
+        }
+    }
+}

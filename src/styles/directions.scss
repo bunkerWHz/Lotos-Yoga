@@ -1,13 +1,5 @@
-.directions {
-    box-sizing: border-box;
-    min-width: calc(375px);
-    width: calc(100vw - 17px);
-    min-height: calc(812px);
-    height: 100vh;
-    background-color: #fbf5f4;
-    padding: 0 14px 0px 17px;
-    position: relative;
-    overflow: hidden;
+.directions__content {
+    padding-top: 103px;
 }
 .direction {
     max-width: 440px;
@@ -37,9 +29,12 @@
 .direction__sliders {
     width: 70px;
     height: 30px;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: absolute;
-    right: 0px;
+    right: 4px;
+    top: 147px;
 }
 
 .direction__title {
@@ -59,6 +54,7 @@
     font-weight: 300;
     line-height: 30px;
     margin-bottom: 24px;
+    letter-spacing: -0.1px;
 
     &:last-of-type {
         margin-bottom: 22px;
@@ -91,8 +87,9 @@
 
 .direction__sliders .page-swiper {
     top: 19px;
+    margin: 0;
+    position: unset;
     &--left {
-        right: 9px;
 transform: rotate(90deg);
 background: linear-gradient(to left, #f78e6a 0%, #fc66a2 100%);
 background-clip: text;
@@ -100,7 +97,6 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
     }
     &--right {
-        right: 3px;
         transform: rotate(-90deg);
     }
 }
@@ -117,25 +113,16 @@ background-clip: text;
         top: calc(50% - 8px);
         left: calc(50% - 1px);
         height: 16px;
+        width: 2px;
     }
 
     &:after {
-        height: 16px;
-        top: calc(50% - 8px);
-        left: calc(50% - 1px);
+        width: 16px;
+        height: 2px;
+        top: calc(50% - 1px);
+        left: calc(50% - 8px);
     }
 }
-
-.directions__content {
-padding: 0;
-padding-top: 98px;
-    height: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .direction__list {
     display: none;
 }
@@ -158,12 +145,7 @@ padding-top: 98px;
 
 
 @media screen and (min-width: 768px) {
-    .directions {
-        min-width: 768px;
-        min-height: 1024px;
-        padding: 0 30px;
 
-    }
     .direction__main-logo--mobile {
         position: absolute;
         bottom: -48px;
@@ -171,9 +153,6 @@ padding-top: 98px;
 
     }
     .directions__content {
-        flex-direction: row;
-        position: relative;
-        flex-wrap: wrap;
         padding: 0;
         padding-top: 84px;
     }
@@ -266,11 +245,6 @@ padding-top: 98px;
 
 
 @media screen and (min-width: 1920px) {
-    .directions {
-        min-width: 1920px;
-        min-height: 1080px;
-        padding: 0 90px;
-    }
     .direction {
         max-width: 100%;
         &__desc {
