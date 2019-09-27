@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-bottom: 51px;
 }
 
 .client__bio {
@@ -14,7 +15,7 @@
 
 .clients__content {
     padding: 0;
-    padding-top: 67px;
+    padding-top: 73px;
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -69,7 +70,7 @@
     font-weight: 300;
     line-height: 30px;
     margin-top: 14px;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     display: block;
 }
 
@@ -79,7 +80,19 @@
     margin: 0;
     list-style: none;
 }
-
+.client__swiper {
+    position: absolute;
+    margin: 0;
+    top: 228px;
+    &--left{
+        transform: rotate(90deg);
+        right: 44px !important;
+    }
+    &--right {
+        right: 4px !important;
+        transform: rotate(270deg);
+    }
+}
 .client__list {
     margin-bottom: 26px;
 }
@@ -90,7 +103,7 @@
 }
 
 .clients-btn {
-    width: 284px;
+    width: 278px;
     background-image: none;
     display: inline-block;
     height: 60px;
