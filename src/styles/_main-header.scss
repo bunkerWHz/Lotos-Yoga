@@ -64,8 +64,8 @@
     }
     &--active {
         z-index: 10;
-        position: absolute;
-        top: 20px;
+        position: fixed;
+        top: 14px;
         height: 20px;
         .hamburger__line--top{
             transform: rotate(45deg);
