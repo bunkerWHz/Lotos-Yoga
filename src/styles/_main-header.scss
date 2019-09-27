@@ -2,37 +2,44 @@
     display: flex;
     height: 25px;
     flex-direction: row;
-    z-index: 2;
 }
 
 .main-nav {
-
     &__items {
         padding: 0;
         margin: 0;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         list-style: none;
         position: absolute;
-        top: 0;
         height: 100vh;
+        width: 100vw;
+        z-index: 9;
     }
-
+    &--opened > .main-nav__items {
+        display: flex;
+        position: fixed;
+        background-color: #fbf5f4;
+        opacity: 0.9;
+        padding: 180px 0;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
     &__item {
         text-decoration: none;
         color: rgba(#000000, 0.5);
         font-family: "Geometria";
         font-size: 24px;
-
+        outline-color: #f78e6a;
+        &:hover {
+            color: #000000;
+        }
         &--active {
             color: #000000;
         }
-    }
-
-    &--closed .main-nav__items {
-        display: none;
     }
 }
 
@@ -48,6 +55,47 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    outline: 2px #f78e6a;
+    &:focus{
+        box-shadow: 0 0 7px 3px #f78e6a;
+        }
+    &:hover {
+        box-shadow: 0 0 7px 3px #f78e6a;
+    }
+    &--active {
+        z-index: 10;
+        position: fixed;
+        height: 20px;
+        .hamburger__line--top{
+            transform: rotate(45deg);
+            width: 20px;
+            top: 10px;
+            &:before {
+                display: none;
+            }
+        }
+        .hamburger__line--bottom {
+            transform: rotate(-45deg);
+            width: 20px;
+            bottom: 10px;
+            &:before {
+                display: none;
+            }
+        }
+        .hamburger__line--middle {
+            display: none;
+        }
+        & ~ .main-nav__items {
+                display: flex;
+                position: fixed;
+                background-color: #fbf5f4;
+                opacity: 0.9;
+                padding: 180px 0;
+                top: 0;
+                right: 0;
+                left: 0;
+        }
+    }
 
     &__line {
         display: inline-block;
@@ -55,7 +103,6 @@
         width: 20px;
         background-color: #f78e6a;
         position: absolute;
-
         &:before {
             position: absolute;
             left: -4px;
