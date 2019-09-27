@@ -2,7 +2,8 @@
 .schedule-hero {
     height: 100%;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 56px;
+    align-items: unset;
 }
 .item__content {
     box-sizing: border-box;
@@ -14,6 +15,7 @@
     font-family: "Geometria";
     font-size: 14px;
     vertical-align: top;
+    letter-spacing: -0.1px;
 }
 .schedule-menu__items {
     display: grid;
@@ -21,6 +23,7 @@
     grid-template-columns: repeat(7, 201px);
     grid-gap: 2px;
     list-style: none;
+    margin-bottom: 34px;
     &>li {
         text-align: center;
         color: #010101;
@@ -35,7 +38,7 @@
         font-weight: 700;
     }
     &>li:first-child .item__content {
-        padding: 22px 20px 0 32px;
+        padding: 21px 20px 0 32px;
     text-align: left;
     color: #010101;
     }
