@@ -5,19 +5,20 @@
     align-items: center;
     flex-direction: column;
     text-align: left;
+    padding-bottom: 50px;
 }
 
 .map__logo--mobile {
     position: absolute;
-    top: -3px;
-    left: calc(50%);
+    top: -14px;
+    left: calc(49% + 1px);
     margin-left: -187px;
     margin-right: -187px;
 }
 
 .adress__title {
     line-height: 16px;
-    font-family: "Geometria - Light";
+    font-family: "Geometria";
     font-size: 14px;
     font-weight: 300;
 }
@@ -38,19 +39,22 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 30px;
+    letter-spacing: -0.1px;
 }
-
+.adress__links {
+    margin-bottom: 30px;
+}
 .adress__link {
-    margin-bottom: 16px;
-    &:nth-child(2) {
-        margin-bottom: 26px;
-    }
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .link__icon {
     display: inline-block;
     width: 30px;
-    margin-right: 8px;
+    margin-right: 10px;
     height: 30px;
     position: relative;
     border-radius: 50%;
@@ -102,7 +106,7 @@
 
 .contacts__adress {
     margin: 0;
-    margin-top: 264px;
+    margin-top: 269px;
     width: 100%;
     
 }
@@ -110,7 +114,7 @@
 margin: 0;
 margin-bottom: 18px; 
     &:nth-child(2) {
-        margin-bottom: 32px;
+        margin-bottom: 33px;
     }
 }
 .adress__title {
