@@ -205,11 +205,13 @@
 @media screen and (min-width: 1920px) {
 
     .main-header {
-        padding-top: 68px;
+        padding-top: 58px;
+        height: 94px;
     }
 
     .page__phone {
         margin-right: -1px;
+        margin-bottom: 5px;
     }
 
     .page__title {
@@ -224,10 +226,11 @@
         position: relative;
         margin-right: -273px;
 
+
         &:before {
             border-radius: 50%;
             top: calc(50% - 3px);
-            left: -15px;
+            left: -17px;
             content: "";
             display: inline-block;
             position: absolute;
