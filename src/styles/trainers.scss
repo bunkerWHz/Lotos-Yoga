@@ -211,7 +211,7 @@ flex-direction: column;
         padding: 0;
         align-items: center;
     }
-    .trainer__lists .list__link--active:before {
+    .trainer__list .list__link--active:before {
         content: "Trainer —";
         left: -89px;
     }
@@ -219,13 +219,13 @@ flex-direction: column;
         order: 2;
         margin: 0;
         margin-left: 109px;
-        margin-top: 138px;
+        margin-top: 132px;
         margin-bottom: auto;
     }
     .trainers__bio {
         order: 4;
         margin: 0;
-        margin-top: 140px;
+        margin-top: 134px;
         margin-bottom: auto;
         width: 500px;
         min-height: 400px;
@@ -240,9 +240,12 @@ flex-direction: column;
     .trainer__img--desktop {
         order: 3;
         margin: 0;
+        position: relative;
+        bottom: unset;
+        right: unset;
         margin-left: 119px;
         margin-right: 103px;
-        margin-top: 184px;
+        margin-top: 180px;
         margin-bottom: auto;
 width: 335px;
 height: 335px;
