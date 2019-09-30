@@ -1,6 +1,5 @@
 
 .contacts-hero {
-    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -127,13 +126,13 @@ margin-bottom: 18px;
     .contacts-hero {
         position: relative;
         align-items: flex-start;
-        padding-top: 252px;
+        padding-top: 256px;
     }
 
     .map__logo--mobile {
         display: initial;
         position: absolute;
-        top: 102px;
+        top: 107px;
         left: 50%;
         margin-left: -384px;
         margin-right: -384px;
