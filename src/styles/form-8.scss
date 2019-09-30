@@ -44,6 +44,7 @@ width: 320px;
 @media screen and (min-width: 1920px) {
     .form__wrapper--8 {
         padding: 0;
+        height: calc(100vh - 184px);
     }
     .form-8__logo--mobile {
     margin-top: 5px;
