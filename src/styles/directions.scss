@@ -197,13 +197,12 @@ background-clip: text;
         margin: 0;
         list-style: none;
         margin-bottom: auto;
+        .yoga__list {
+            margin: 15px 0 22px;
+        }
     }
 
-    .yoga__list {
-        margin: 15px 0 22px;
-
-    }
-
+   
     .list__link {
         text-decoration: none;
         opacity: 0.5;
@@ -218,7 +217,7 @@ background-clip: text;
             font-weight: 500;
             &:before {
                 position: absolute;
-               
+               content: "";
                 display: inline-block;
                 top: -4px;
                 background-image: linear-gradient(to top, #fc66a2 0%, #f78e6a 100%);
@@ -234,7 +233,7 @@ background-clip: text;
             }
         }
     }
-    .directions  .list__link--active::before {
+    .yoga__list  .list__link--active:before {
         content: "Yoga —";
         left: -72px;
     }
@@ -247,6 +246,7 @@ background-clip: text;
         &__desc {
             font-size: 18px;
             line-height: 35px;
+            margin-bottom: 20px;
         }
     }
     .directions__content {
@@ -263,17 +263,17 @@ background-clip: text;
         order: 3;
         margin-right: 105px;
         margin-left: 74px;
-        margin-top: 19px;
+        margin-top: 11px;
     }
     .yoga__lists {
         order: 2;
         margin-left: 110px;
-        margin-top: 123px;
+        margin-top: 117px;
         margin-bottom: auto;
     }
     .direction__lists {
         order: 4;
-        margin-top: 24px;
+        margin-top: 126px;
         width: 500px;
         min-height: 500px;
     }
