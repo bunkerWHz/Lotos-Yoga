@@ -154,10 +154,14 @@
     .main-header {
         justify-content: space-between;
         padding: 0;
-        padding-top: 27px;
+        height: 52px;
+        align-items: center;
+        padding-top: 18px;
     }
 
     .hamburger {
+       margin: 0;
+       margin-top: 3px;
         margin-right: 14px;
         float: left;
     }
@@ -165,7 +169,7 @@
     .main-nav {
         padding: 0;
         padding-left: 4px;
-        margin-top: -1px;
+        padding-top: 5px;
     }
 
     .menu__title {
@@ -183,12 +187,16 @@
         font-size: 18px;
         text-decoration: none;
         font-weight: 500;
+        letter-spacing: -0.1px;
+        margin-bottom: 4px;
+        align-self: flex-end;
     }
 
     .main__logo {
         margin: 0 auto;
-        margin-right: 168px;
-        margin-top: -5px;
+        height: 30px;
+        align-self: flex-end;
+        margin-right: calc(50% - 158px + 22px );
     }
 
 

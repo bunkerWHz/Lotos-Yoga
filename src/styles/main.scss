@@ -1,19 +1,19 @@
 @font-face  {
     font-family: "Geometria"; 
-   src: url("./../fonts/Geometria.ttf");
+   src: url("/fonts/Geometria.ttf");
    font-weight: 400;
 }
 @font-face {
     font-family:"Geometria"; 
-    src: url("fonts/Geometria-Medium.ttf");
+    src: url("/fonts/Geometria-Medium.ttf");
     font-weight: 500;
   }
 @font-face {
     font-family: "Geometria - Extra Light";
-    src: url("fonts/Geometria-ExtraLight.ttf");
+    src: url("/fonts/Geometria-ExtraLight.ttf");
     font-weight: 400;
 }
-@import "norm.css";
+@import "norm.scss";
 html {
     scroll-behavior: smooth;
 }
