@@ -33,7 +33,7 @@
     }
 }
 .ticket__wrapper {
-    padding: 36px 40px 35px 38px;
+    padding: 35px 40px 35px 38px;
     position: relative;
 }
 .item__name {
@@ -45,6 +45,7 @@ line-height: 20px;
 margin: 0;
 padding: 0;
 margin-bottom: 18px;
+letter-spacing: -0.1px;
 }
 
 .item__icon {
@@ -170,6 +171,10 @@ line-height: 20px;
     .tickets-hero {
         padding: 0;
     }
+    .tickets__content {
+        position: relative;
+        align-items: center;
+    }
     .tickets__items {
     margin-top: 0;
     }
@@ -178,7 +183,7 @@ line-height: 20px;
         position: absolute;
         z-index: 2;
         right: -19px;
-        bottom: 140px;
+        bottom: 212px;
     }
     .tickets-btn {
         margin-top: 55px;
