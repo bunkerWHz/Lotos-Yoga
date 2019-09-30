@@ -82,13 +82,13 @@
 .client__swiper {
     position: absolute;
     margin: 0;
-    top: 228px;
+    top: 242px;
     &--left{
         transform: rotate(90deg);
-        right: 44px !important;
+        right: 60px !important;
     }
     &--right {
-        right: 4px !important;
+        right: 20px !important;
         transform: rotate(270deg);
     }
 }
