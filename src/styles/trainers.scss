@@ -118,10 +118,12 @@
     .trainers__bio {
         max-width: 415px;
         display: flex;
+        margin-right: 30px;
     }
     .trainers__content {
         padding: 0;
-        padding-top: 101px;
+        padding-top: 104px;
+        align-items: flex-start;
     }
     .trainer {
         box-sizing: border-box;
@@ -182,17 +184,18 @@ flex-direction: column;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            position: relative;
         }
         .trainer__img {
             display: flex;
             order: 4;
-            position: relative;
-            margin-right: 0;
+            position: absolute;
+            right: 29px;
+            margin: 0;
+            bottom: 241px;
             background: url(/img/768_trainer-bg.png) no-repeat;
             height: 207px;
             width: 207px;
-            margin-top: -260px;
-            margin-right: 28px;
         }
         .trainer__photo {
         &--desktop {
