@@ -17,7 +17,6 @@
     padding: 0;
     padding-top: 73px;
     display: flex;
-    height: 100%;
     flex-direction: column;
 }
 
@@ -165,7 +164,9 @@
     .client__desc--mobile {
         display: block;
     }
-
+    .client__swiper {
+        display: none;
+    }
     .review__link {
         display: none;
     }
@@ -173,6 +174,7 @@
     .client__desc {
         width: 440px;
         margin-bottom: 24px;
+        letter-spacing: -0.1px;
 
         &--mobile {
             width: 475px;
@@ -184,7 +186,8 @@
     .clients__content {
         flex-direction: row;
         position: relative;
-        padding-top: 100px;
+        padding-top: 104px;
+        align-items: flex-start;
     }
 
     .client__lists {
@@ -200,7 +203,7 @@
     .client-page__logo {
         display: block;
         position: absolute;
-        bottom: -23px;
+        bottom: 50px;
         right: 3px;
         z-index: 1;
     }
